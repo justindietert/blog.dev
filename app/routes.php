@@ -29,7 +29,7 @@ Route::get('/portfolio', function()
 Route::get('/rolldice/{guess}', function($guess)
 {
     // Get a random number between 1 and 6.
-    $random = rand(1, 6);
+    $random = mt_rand(1, 6);
 
     // Display appropriate message to user.
     if ($random == $guess) {
