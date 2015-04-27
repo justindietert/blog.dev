@@ -25,3 +25,24 @@ Route::get('/portfolio', function()
 {
     return 'This is my portfolio.';
 });
+
+Route::get('/rolldice/{guess}', function($guess)
+{
+    // Get a random number between 1 and 6.
+    $random = rand(1, 6);
+
+    // Display appropriate message to user.
+    if ($random == $guess) {
+        $message = 'Correct!';
+    } else {
+        $message = 'Wrong!';
+    }
+
+    $data   = array(
+        'random'  => $random,
+        'guess'   => $guess,
+        'message' => $message
+    );
+
+    return View::make('roll-dice')->with($data);
+});
