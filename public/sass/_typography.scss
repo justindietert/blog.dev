@@ -25,3 +25,43 @@ h6 {
 strong {
     font-weight: 600;
 }
+
+#resume hr {
+    margin-bottom: 1.5em;
+}
+
+#resume h4 {
+    margin-bottom: 0.5rem;
+}
+
+#resume h5 {
+    font-family: 'Source Sans Pro', Verdana, sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;  
+    letter-spacing: 0.1825rem;
+}
+
+#resume ul {
+    list-style-type: circle;
+    padding-left: 0;
+    margin-bottom: 1.5em;
+}
+
+p.sub {
+    color: $tin;
+    font-size: 0.7875em;
+    text-transform: uppercase;
+    letter-spacing: 0.09875rem;
+    text-indent: 0;
+    margin-bottom: 0.1875em;
+}
+
+p.sub + p.sub {
+    margin-top: 0.125em;
+}
+
+ul.experience,
+ul.education {
+    margin-top: 0;
+}
+
