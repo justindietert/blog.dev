@@ -9,11 +9,11 @@
 @stop
 
 @section('nav-active')
-    <li class="active"><a href="/">Home</a></li>
-    <li><a href="/work">Work</a></li>
-    <li><a href="/about">About</a></li>
-    <li><a href="/resume">Resum&eacute;</a></li>
-    <li><a href="/blog">Blog</a></li>
+    <li class="active"><a href="{{{ action('HomeController@showHome') }}}">Home</a></li>
+    <li><a href="{{{ action('HomeController@showWork') }}}">Work</a></li>
+    <li><a href="{{{ action('HomeController@showAbout') }}}">About</a></li>
+    <li><a href="{{{ action('HomeController@showResume') }}}">Resum&eacute;</a></li>
+    <li><a href="{{{ action('HomeController@showBlog') }}}">Blog</a></li>
 @stop
 
 @section('content')

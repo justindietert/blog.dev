@@ -36,7 +36,7 @@
 
             <header role="banner" class="banner clearfix">
                 <div id="logo">
-                    <a href="/"><img src="/img/jd-logo-black.png" width="50" alt="Justin Dietert"><span class="screen-reader-text">Justin Dietert</span></a>
+                    <a href="{{{ action('HomeController@showHome') }}}"><img src="/img/jd-logo-black.png" width="50" alt="Justin Dietert"><span class="screen-reader-text">Justin Dietert</span></a>
                 </div>
 
                 <a href="#" class="menu">Menu</a>
