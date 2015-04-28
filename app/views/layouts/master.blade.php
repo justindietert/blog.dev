@@ -34,7 +34,19 @@
 
         <section id="main" class="row col">
 
-            @include('partials.nav')
+            <header role="banner" class="banner clearfix">
+                <div id="logo">
+                    <a href="/"><img src="/img/jd-logo-black.png" width="50" alt="Justin Dietert"><span class="screen-reader-text">Justin Dietert</span></a>
+                </div>
+
+                <a href="#" class="menu">Menu</a>
+
+                <nav role="navigation" class="navigation">
+                    <ul>
+                        @yield('nav-active')
+                    </ul>
+                </nav>
+            </header>
 
             @yield('content')
 

@@ -21,7 +21,7 @@ Route::get('/resume', function()
     return View::make('resume');
 });
 
-Route::get('/portfolio', function()
+Route::get('/work', function()
 {
-    return View::make('portfolio');
+    return View::make('work');
 });
