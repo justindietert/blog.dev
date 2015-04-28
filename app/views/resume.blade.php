@@ -19,38 +19,9 @@
 @section('content')
         <div role="main" class="main" id="resume">
             <div class="inner">
-                <h2>Justin Dietert</h2>
+                {{-- <h2>Justin Dietert</h2> --}}
 
-                <hr>
-
-                <h5>Skills</h5>
-                <ul>
-                    <li>LAMP stack (Linux, Apache, MySQL, PHP)</li>
-                    <li>HTML5, CSS3, JavaScript, jQuery</li>
-                    <li>Vagrant, Laravel MVC framework, Sequel Pro</li>
-                    <li>Zurb Foundation and Twitter Bootstrap</li>
-                    <li>version control &mdash; Git and <a href="http://github.com/justindietert">GitHub</a></li>
-                    <li>brand and visual identity creation</li>
-                    <li>layout, typography, color theory, photography</li>
-                    <li>design project management, art direction</li>
-                    <li>Adobe InDesign, Illustrator, Photoshop, Lightroom</li>
-                </ul>
-
-                <hr>
-        
-                <h5>Education</h5>
-                <h4>Codeup Bootcamp, 2015</h4>
-                <ul class="education">
-                    <li>LAMP+J Web Development</li>
-                    <li>4-month immersive bootcamp</li>
-                </ul>   
-                <h4>Bachelor of Fine Arts, New Media, 2008</h4>
-                <ul class="education">
-                    <li>University of Texas at San Antonio</li>
-                    <li>GPA: 4.0, Summa Cum Laude</li>
-                </ul>
-
-                <hr>
+                <hr class="top">
 
                 <h5>Experience</h5>
                 <h4>Freelance Web Developer</h4>
@@ -69,6 +40,56 @@
                     <li>projects included publication design, magazine ad design, invitation design, brochure design, logo design, booklet design, email marketing, and other printed materials</li>
                     <li>collaborated with in-house team of graphic designers, writers, photographers, and videographers on a daily basis</li>
                 </ul>
+
+                <h4>Marketing and Design Manager</h4>
+                <p class="sub">Digital Pro Lab</p>
+                <p class="sub">2010 &ndash; 2012 | San Antonio, TX</p>
+                <ul class="experience">
+                    <li>increased sales and revenue by marketing company services to professional clients and supervised design staff to ensure success of projects</li>
+                    <li>lead designer for print and online advertising campaigns and in charge of monthly email newsletters from concept to HTML code</li>
+                    <li>assisted with vendor and product selection, product development, and regularly attended trade shows to make services recommendations</li>
+                    <li>planned special events and delivered presentations to professional clients</li>
+                </ul>
+
+                <h4>Graphic Designer</h4>
+                <p class="sub">Digital Pro Lab</p>
+                <p class="sub">2005 &ndash; 2010 | San Antonio, TX</p>
+                <ul class="experience">
+                    <li>worked with in-house design team to create digital and print marketing material for company and professional clients</li>
+                    <li>supervised company website re-design while providing support to in-house web designer through the creation of graphics and written content</li>
+                    <li>responsible for managing multiple projects simultaneously and meeting tight deadlines required by professional clients</li>
+                    <li>in charge of product photography</li>
+                </ul>
+
+                <hr>
+        
+                <h5>Education</h5>
+                <h4>Codeup Bootcamp, 2015</h4>
+                <ul class="education">
+                    <li>LAMP+J Web Development</li>
+                    <li>4-month immersive bootcamp</li>
+                </ul>   
+                <h4>Bachelor of Fine Arts, New Media, 2008</h4>
+                <ul class="education">
+                    <li>University of Texas at San Antonio</li>
+                    <li>GPA: 4.0, Summa Cum Laude</li>
+                </ul>
+
+                <hr>
+
+                <h5>Skills</h5>
+                <ul>
+                    <li>LAMP stack (Linux, Apache, MySQL, PHP)</li>
+                    <li>HTML5, CSS3, JavaScript, jQuery</li>
+                    <li>Vagrant, Laravel MVC framework, Sequel Pro</li>
+                    <li>Zurb Foundation and Twitter Bootstrap</li>
+                    <li>version control &mdash; Git and <a href="http://github.com/justindietert">GitHub</a></li>
+                    <li>brand and visual identity creation</li>
+                    <li>layout, typography, color theory, photography</li>
+                    <li>design project management, art direction</li>
+                    <li>Adobe InDesign, Illustrator, Photoshop, Lightroom</li>
+                </ul>
+
             </div>
         </div>
 @stop
