@@ -47,6 +47,10 @@ hr#topbar {
     padding: 0;
 }
 
+hr.top {
+    margin-top: 0.25em;
+}
+
 section#main {
     padding-top: 3.25em;
     padding-bottom: 11em; /* Height of footer element */
