@@ -13,36 +13,15 @@
 
 Route::get('/', function()
 {
-	return View::make('hello');
+	return View::make('home');
 });
 
 Route::get('/resume', function()
 {
-    return 'This is my resume.';
+    return View::make('resume');
 });
 
 Route::get('/portfolio', function()
 {
-    return 'This is my portfolio.';
-});
-
-Route::get('/rolldice/{guess}', function($guess)
-{
-    // Get a random number between 1 and 6.
-    $random = mt_rand(1, 6);
-
-    // Display appropriate message to user.
-    if ($random == $guess) {
-        $message = 'Correct!';
-    } else {
-        $message = 'Wrong!';
-    }
-
-    $data   = array(
-        'random'  => $random,
-        'guess'   => $guess,
-        'message' => $message
-    );
-
-    return View::make('roll-dice')->with($data);
+    return View::make('portfolio');
 });

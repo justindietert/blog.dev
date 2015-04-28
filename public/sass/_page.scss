@@ -1,0 +1,296 @@
+/*---------------------------------------------------------*\
+
+    Page Structure
+
+\*---------------------------------------------------------*/
+
+html, 
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+body {
+    background: #f2f2f2;
+}
+
+iframe {
+    border: 0;
+    overflow: hidden;
+}
+
+ol, ul {
+    list-style: none; 
+}
+
+img {
+    max-width: 100%; /* Makes sure images respect the bounds of a fluid container. The image never exceeds the width of its container. */
+    height: auto;    /* The image's aspect ratio is preserved even if it has an inline height set. */
+}                    
+
+#wrap {
+    background: #fff;
+    min-height: 100%;
+    position: relative;
+}
+
+hr#topbar {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 1em;
+    background: #f2f2f2;
+    z-index: 200;
+    border: none;
+    margin: 0;
+    padding: 0;
+}
+
+section#main {
+    padding-top: 3.25em;
+    padding-bottom: 11em; /* Height of footer element */
+    background: #fff;
+}
+    @media only screen and (max-width: 28.125em) {
+        section#main {
+                padding-bottom: 17.325em; /* Height of footer element */
+            } 
+        }
+
+#logo {
+    float: left; 
+}
+
+#logo a:hover, 
+#logo a:active,
+#logo a:focus {
+    opacity: .60;
+    outline: 0; 
+}
+
+.screen-reader-text {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+}
+
+header.banner {
+    margin: 0 auto;
+    max-width: 55.556em; /* 1000px at 18px base font size */
+    z-index: 100;
+    position: relative;
+}
+
+a.menu {
+    display: none; 
+}
+    @media only screen and (max-width: 50em) {
+        a.menu {
+            display: block;
+            position: absolute;
+            top: 0.5em;
+            right: 0; 
+            font-weight: 600;
+            letter-spacing: 1px;
+            letter-spacing: 0.056rem;
+            text-transform: uppercase;
+            text-decoration: none;
+            color: #bbb;
+            color: rgba(0, 0, 0, 0.3); 
+        } 
+            a.menu:hover, 
+            a.menu:active {
+                color: #222; 
+                outline: 0;
+            }
+                a.menu:focus {
+                    outline: 0;
+                }
+    }
+
+nav.navigation {
+    width: 68%;
+    margin: 0 auto;
+    padding-top: 0.555em; 
+}
+    @media only screen and (max-width: 50em) {
+        nav.navigation {
+            display: none;
+            clear: left;
+            padding-top: 1.111em;
+            width: 100%; 
+        } 
+        .no-js nav.navigation {
+            display: block; /* If JavaScript is disabled, display menu in open state */
+        } 
+    }
+
+nav.navigation ul {
+    padding: 0 0 0.6125em 0; 
+    margin-top: 0;
+    margin-bottom: 0;
+}
+    @media only screen and (max-width: 50em) {
+        nav.navigation ul {
+            padding: 0;
+            text-align: left;
+            border-top: 0.056em solid #f2f2f2;
+        } 
+    }
+
+nav.navigation ul li {
+    display: inline;
+    margin: 0 2.222em 0 0; 
+}
+
+nav.navigation ul li:last-child {
+    margin-right: 0;
+}
+    @media only screen and (max-width: 50em) {
+        nav.navigation ul li {
+            display: block;
+            margin: 0; 
+        } 
+    }
+
+nav.navigation ul li a {
+    font-weight: 600;
+    letter-spacing: 1px;
+    letter-spacing: 0.056rem;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #bbb;
+    color: rgba(0, 0, 0, 0.3); 
+}
+    @media only screen and (max-width: 50em) {
+        nav.navigation ul li a {
+                display: block;
+                padding: 1em 0 1.111em 0;
+                border-bottom: 0.056em solid #f2f2f2;
+            } 
+        }
+
+nav.navigation ul li a:hover,
+nav.navigation ul li a:active,
+nav.navigation ul li a:focus {
+    color: #222; 
+    outline: 0;
+}
+
+nav.navigation ul li.active a {
+    color: #222; 
+}
+
+div.main {
+    margin: 0 auto;
+    max-width: 55.556em; /* 1000px at 18px base font size */
+    padding-bottom: 1.5em;
+}
+
+div.inner {
+    margin: 0 auto;
+    width: 68%;
+    padding-top: 2.5em;
+    transition: width 200ms ease-in-out;
+}
+    @media only screen and (max-width: 50em) {
+        div.inner {
+            width: 100%;
+        }
+    }
+
+/*----------------------------------*\
+    Main Body Text Links
+\*----------------------------------*/
+
+div.inner a, 
+div.inner a:visited {
+    color: #0074D9;
+    text-decoration: none; 
+}
+
+div.inner a:hover,
+div.inner a:active,
+div.inner a:focus {
+    text-decoration: none;
+    border-bottom: 0.056em dotted #0074D9;
+    padding-bottom: 0.111em;
+    outline: 0;
+}
+
+/*----------------------------------*\
+    Text Selection
+\*----------------------------------*/
+
+::-moz-selection {
+    color: #fff;
+    color: rgba(255, 255, 255, 0.8);
+    background: #b2b2b2; 
+}
+
+::selection {
+    color: #fff;
+    color: rgba(255, 255, 255, 0.8);
+    background: #b2b2b2; 
+}
+
+/*----------------------------------*\
+    Footer
+\*----------------------------------*/
+
+footer {
+    height: 11em; /* Set to be the same as padding-bottom on section#main */
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: #f2f2f2;
+    color: #aaa;
+    font-weight: 300;
+}
+    @media only screen and (max-width: 28.125em) {
+        footer {
+                height: 17.325em; /* Set to be the same as padding-bottom on section#main */
+            } 
+        }
+
+div.foot {
+    margin: 0 auto;
+    max-width: 55.556em; /* 1000px at 18px base font size */
+}
+
+ul.social {
+    padding: 0;
+    margin: 0;
+}
+
+ul.social li {
+    display: inline;
+    margin: 0 2.222em 0 0; 
+}
+    @media only screen and (max-width: 28.125em) {
+        ul.social li {
+                display: block;
+                margin: 0 0 0.5em 0;
+            } 
+        }
+
+ul.social li:last-child {
+    margin-right: 0;
+}
+
+div.inner ul.social li a,
+div.inner ul.social li a:visited {
+    text-decoration: none;
+    font-weight: 400;
+    color: #aaa;
+}
+
+div.inner ul.social li a:hover,
+div.inner ul.social li a:active,
+div.inner ul.social li a:focus {
+    text-decoration: none;
+    border-bottom: 0.056em dotted #aaa;
+    padding-bottom: 0.111em;
+    outline: 0;
+}
