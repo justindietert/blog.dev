@@ -8,7 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="apple-touch-icon" href="apple-touch-icon.png">
     <!-- Google Fonts -->
-    <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,400italic,600|Source+Serif+Pro:400' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,400italic,600,700,900|Source+Serif+Pro:400,600' rel='stylesheet' type='text/css'>
     <!-- Main CSS -->
     <link rel="stylesheet" href="/css/main.css">
 
