@@ -9,6 +9,8 @@
     <link rel="apple-touch-icon" href="apple-touch-icon.png">
     <!-- Google Fonts -->
     <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,400italic,600,700,900|Source+Serif+Pro:400,600' rel='stylesheet' type='text/css'>
+    <!-- FontAwesome icons-->
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" />
     <!-- Main CSS -->
     <link rel="stylesheet" href="/css/main.css">
 

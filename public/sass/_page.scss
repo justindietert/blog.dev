@@ -51,6 +51,12 @@ hr.top {
     margin-top: 0.25em;
 }
 
+a.pdf-resume {
+    position: absolute;
+    top: 4.0625em;
+    right: 0;
+}
+
 section#main {
     padding-top: 3.25em;
     padding-bottom: 11em; /* Height of footer element */
@@ -193,6 +199,7 @@ div.main {
 }
 
 div.inner {
+    position: relative;
     margin: 0 auto;
     width: 68%;
     padding-top: 2.5em;
@@ -298,3 +305,4 @@ div.inner ul.social li a:focus {
     padding-bottom: 0.111em;
     outline: 0;
 }
+
