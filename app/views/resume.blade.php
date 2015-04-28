@@ -27,38 +27,38 @@
                 <h4>Freelance Web Developer</h4>
                 <p class="sub">May 2015 &ndash; present | San Antonio, TX</p>
                 <ul class="experience">
-                    <li>designing and building websites and applications through proficiency in the Laravel MVC framework and the LAMP+J stack</li>
-                    <li>development done in a Vagrant environment utilizing version control with Git and Github</li>
+                    <li>Designing and building websites and applications through proficiency in the Laravel MVC framework and the LAMP+J stack</li>
+                    <li>Development done in a Vagrant environment utilizing version control with Git and Github</li>
                 </ul>
 
                 <h4>Senior Graphic Designer</h4>
                 <p class="sub">Texas State University, Office of University Marketing</p>
                 <p class="sub">July 2012 &ndash; December 2014 | San Marcos, TX</p>
                 <ul class="experience">
-                    <li>worked with clients from many of the diverse departments and offices of the university to effectively market their programs and services to both internal and external audiences</li>
-                    <li>designed within the university’s branding guidelines, managing multiple projects simultaneously from conception to completion</li>
-                    <li>projects included publication design, magazine ad design, invitation design, brochure design, logo design, booklet design, email marketing, and other printed materials</li>
-                    <li>collaborated with in-house team of graphic designers, writers, photographers, and videographers on a daily basis</li>
+                    <li>Worked with clients from many of the diverse departments and offices of the university to effectively market their programs and services to both internal and external audiences</li>
+                    <li>Designed within the university’s branding guidelines, managing multiple projects simultaneously from conception to completion</li>
+                    <li>Projects included publication design, magazine ad design, invitation design, brochure design, logo design, booklet design, email marketing, and other printed materials</li>
+                    <li>Collaborated with in-house team of graphic designers, writers, photographers, and videographers on a daily basis</li>
                 </ul>
 
                 <h4>Marketing and Design Manager</h4>
                 <p class="sub">Digital Pro Lab</p>
                 <p class="sub">2010 &ndash; 2012 | San Antonio, TX</p>
                 <ul class="experience">
-                    <li>increased sales and revenue by marketing company services to professional clients and supervised design staff to ensure success of projects</li>
-                    <li>lead designer for print and online advertising campaigns and in charge of monthly email newsletters from concept to HTML code</li>
-                    <li>assisted with vendor and product selection, product development, and regularly attended trade shows to make services recommendations</li>
-                    <li>planned special events and delivered presentations to professional clients</li>
+                    <li>Increased sales and revenue by marketing company services to professional clients and supervised design staff to ensure success of projects</li>
+                    <li>Lead designer for print and online advertising campaigns and in charge of monthly email newsletters from concept to HTML code</li>
+                    <li>Assisted with vendor and product selection, product development, and regularly attended trade shows to make services recommendations</li>
+                    <li>Planned special events and delivered presentations to professional clients</li>
                 </ul>
 
                 <h4>Graphic Designer</h4>
                 <p class="sub">Digital Pro Lab</p>
                 <p class="sub">2005 &ndash; 2010 | San Antonio, TX</p>
                 <ul class="experience">
-                    <li>worked with in-house design team to create digital and print marketing material for company and professional clients</li>
-                    <li>supervised company website re-design while providing support to in-house web designer through the creation of graphics and written content</li>
-                    <li>responsible for managing multiple projects simultaneously and meeting tight deadlines required by professional clients</li>
-                    <li>in charge of product photography</li>
+                    <li>Worked with in-house design team to create digital and print marketing material for company and professional clients</li>
+                    <li>Supervised company website re-design while providing support to in-house web designer through the creation of graphics and written content</li>
+                    <li>Responsible for managing multiple projects simultaneously and meeting tight deadlines required by professional clients</li>
+                    <li>In charge of product photography</li>
                 </ul>
 
                 <hr>
@@ -83,10 +83,10 @@
                     <li>HTML5, CSS3, JavaScript, jQuery</li>
                     <li>Vagrant, Laravel MVC framework, Sequel Pro</li>
                     <li>Zurb Foundation and Twitter Bootstrap</li>
-                    <li>version control &mdash; Git and <a href="http://github.com/justindietert">GitHub</a></li>
-                    <li>brand and visual identity creation</li>
-                    <li>layout, typography, color theory, photography</li>
-                    <li>design project management, art direction</li>
+                    <li>Version control &mdash; Git and GitHub</li>
+                    <li>Brand and visual identity creation</li>
+                    <li>Layout, typography, color theory, photography</li>
+                    <li>Design project management, art direction</li>
                     <li>Adobe InDesign, Illustrator, Photoshop, Lightroom</li>
                 </ul>
 
