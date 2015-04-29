@@ -26,7 +26,7 @@
 
                 <h5>Experience</h5>
                 <h4>Freelance Web Developer</h4>
-                <h6>May 2015 &ndash; present | San Antonio, TX</h6>
+                <h6>May 2015 &ndash; present | San Antonio, Texas</h6>
                 <ul class="experience">
                     <li>Designing and building websites and applications through proficiency in the Laravel MVC framework and the LAMP+J stack</li>
                     <li>Development done in a Vagrant environment utilizing version control with Git and Github</li>
@@ -34,7 +34,7 @@
 
                 <h4>Senior Graphic Designer</h4>
                 <h6>Texas State University, Office of University Marketing</h6>
-                <h6>July 2012 &ndash; December 2014 | San Marcos, TX</h6>
+                <h6>July 2012 &ndash; December 2014 | San Marcos, Texas</h6>
                 <ul class="experience">
                     <li>Worked with clients from many of the diverse departments and offices of the university to effectively market their programs and services to both internal and external audiences</li>
                     <li>Designed within the university’s branding guidelines, managing multiple projects simultaneously from conception to completion</li>
@@ -44,7 +44,7 @@
 
                 <h4>Marketing and Design Manager</h4>
                 <h6>Digital Pro Lab</h6>
-                <h6>2010 &ndash; 2012 | San Antonio, TX</h6>
+                <h6>2010 &ndash; 2012 | San Antonio, Texas</h6>
                 <ul class="experience">
                     <li>Increased sales and revenue by marketing company services to professional clients and supervised design staff to ensure success of projects</li>
                     <li>Lead designer for print and online advertising campaigns and in charge of monthly email newsletters from concept to HTML code</li>
@@ -54,7 +54,7 @@
 
                 <h4>Graphic Designer</h4>
                 <h6>Digital Pro Lab</h6>
-                <h6>2005 &ndash; 2010 | San Antonio, TX</h6>
+                <h6>2005 &ndash; 2010 | San Antonio, Texas</h6>
                 <ul class="experience">
                     <li>Worked with in-house design team to create digital and print marketing material for company and professional clients</li>
                     <li>Supervised company website re-design while providing support to in-house web designer through the creation of graphics and written content</li>
