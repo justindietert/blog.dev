@@ -3,7 +3,7 @@
 
 /*---------------------------------------------------------*\
 
-    Typography Adjustments (User Defined)
+    Typography Adjustments
 
 \*---------------------------------------------------------*/
 
@@ -41,24 +41,27 @@ strong {
     letter-spacing: 0.1825rem;
 }
 
-#resume ul {
-    list-style-type: circle;
-    padding-left: 0;
-    margin-bottom: 1.5em;
-}
-
-p.sub {
+#resume h6 {
+    font-family: 'Source Sans Pro', Verdana, sans-serif;    
     color: $tin;
     font-size: 0.7875em;
     text-transform: uppercase;
     letter-spacing: 0.09875rem;
     text-indent: 0;
-    margin-bottom: 0.1875em;
+    margin-bottom: 0.25em;
+    line-height: 1.5em;
 }
 
-p.sub + p.sub {
-    margin-top: 0.125em;
+#resume ul {
+    list-style-type: circle;
+    padding-left: 0;
+    margin-bottom: 1.5em;
 }
+    @media only screen and (max-width: 50em) {
+        #resume ul {
+            padding-left: 1.125em;
+        }
+    }
 
 ul.experience,
 ul.education {

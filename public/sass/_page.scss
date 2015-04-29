@@ -51,12 +51,6 @@ hr.top {
     margin-top: 0.25em;
 }
 
-a.pdf-resume {
-    position: absolute;
-    top: 4.0625em;
-    right: 0;
-}
-
 section#main {
     padding-top: 3.25em;
     padding-bottom: 11em; /* Height of footer element */
@@ -304,5 +298,25 @@ div.inner ul.social li a:focus {
     border-bottom: 0.056em dotted $silver;
     padding-bottom: 0.111em;
     outline: 0;
+}
+
+div.inner a.pdf-resume,
+div.inner a.pdf-resume:visited {
+    position: absolute;
+    top: 4.0625em;
+    right: 0;
+    text-align: right;
+    text-decoration: none;
+    font-weight: 400;
+    color: $silver;
+}
+
+div.inner a.pdf-resume:hover,
+div.inner a.pdf-resume:active,
+div.inner a.pdf-resume:focus {
+    text-decoration: none;
+    border-bottom: 0.056em dotted $silver;
+    padding-bottom: 0.111em;
+    outline: 0; 
 }
 
