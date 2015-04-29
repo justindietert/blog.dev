@@ -22,7 +22,7 @@
 
                 <hr class="top">
 
-                <a href="" class="pdf-resume">PDF&nbsp;&nbsp;<i class="fa fa-file-pdf-o"></i></a>
+                <a href="#" class="pdf-resume">PDF&nbsp;&nbsp;<i class="fa fa-file-pdf-o"></i></a>
 
                 <h5>Experience</h5>
                 <h4>Freelance Web Developer</h4>
