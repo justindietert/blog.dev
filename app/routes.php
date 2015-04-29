@@ -22,3 +22,4 @@ Route::get('resume', 'HomeController@showResume');
 Route::get('blog', 'HomeController@showBlog');
 
 Route::resource('posts', 'PostsController');
+
