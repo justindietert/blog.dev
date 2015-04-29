@@ -43,7 +43,7 @@ class PostsController extends \BaseController {
 	 */
 	public function show($id)
 	{
-		return 'Display the specified post.';
+		return 'Display post: ' . $id;
 	}
 
 
@@ -55,7 +55,7 @@ class PostsController extends \BaseController {
 	 */
 	public function edit($id)
 	{
-		return 'Show the form for editing the specififed post.';
+		return 'Show the form for editing post: ' . $id;
 	}
 
 
@@ -67,7 +67,7 @@ class PostsController extends \BaseController {
 	 */
 	public function update($id)
 	{
-		return 'Updated the specified post in storage.';
+		return 'Update post ' . $id . ' in storage.';
 	}
 
 
@@ -79,7 +79,7 @@ class PostsController extends \BaseController {
 	 */
 	public function destroy($id)
 	{
-		return 'Remove the specified post from storage.';
+		return 'Remove post ' . $id . ' from storage.';
 	}
 
 
