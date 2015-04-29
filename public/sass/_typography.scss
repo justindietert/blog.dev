@@ -7,8 +7,13 @@
 
 \*---------------------------------------------------------*/
 
+html {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
 body {
-    font-family: 'Source Sans Pro', Verdana, sans-serif;
+    font-family: $sans;
     font-weight: 400;
 }
 
@@ -18,7 +23,7 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: 'Source Serif Pro', Georgia, serif;
+    font-family: $serif;
     font-weight: 400;
 }
 
@@ -35,14 +40,14 @@ strong {
 }
 
 #resume h5 {
-    font-family: 'Source Sans Pro', Verdana, sans-serif;
+    font-family: $sans;
     font-weight: 700;
     text-transform: uppercase;  
     letter-spacing: 0.1825rem;
 }
 
 #resume h6 {
-    font-family: 'Source Sans Pro', Verdana, sans-serif;    
+    font-family: $sans;    
     color: $tin;
     font-size: 0.7875em;
     text-transform: uppercase;
