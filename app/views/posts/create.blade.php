@@ -19,6 +19,7 @@
 @section('content')
         <div role="main" class="main" id="blog-create-post">
             <div class="inner">
+                <h2>Create new post</h2>
                 <form action="{{{ action('PostsController@store') }}}" method="POST">
                     <label for="title">Title</label>
                     <input type="text" name="title" id="title" value="{{{ Input::old('title') }}}">
