@@ -43,12 +43,14 @@
 .two, 
 .three { 
     width: 33.33%;  
+    margin-bottom: 1.125em;
 }  
     @media only screen and (max-width: 50em) {
         .one, 
         .two, 
         .three { 
             width: 100%;  
+            margin-bottom: 1em;
         } 
     }
 
@@ -56,13 +58,13 @@
 .two img, 
 .three img {
     width: 100%;
-    margin-bottom: 3em;
+    margin-bottom: .25em;
 }
     @media only screen and (max-width: 50em) {
         .one img, 
         .two img, 
         .three img {
-            margin-bottom: 1.5em;
+            margin-bottom: .5em;
         }
     }
-    
+

@@ -73,6 +73,33 @@ section#main {
     outline: 0; 
 }
 
+#work a {
+    border-bottom: none;
+    padding-bottom: 0;
+}
+
+#work a img {
+    width: 100%;
+    height: auto;
+}
+
+#work a:hover,
+#work a:active,
+#work a:focus {
+    opacity: .60;
+}
+
+a.thumb span {
+    font-weight: 300;
+    font-size: 0.875em;
+    color: $silver;
+}
+    @media only screen and (max-width: 50em) {
+        a.thumb span {
+            font-size: 1em; 
+        }
+    }
+
 .screen-reader-text {
     position: absolute;
     top: -9999px;

@@ -17,39 +17,39 @@
 @stop
 
 @section('content')
-        <div role="main" class="main">
+        <div role="main" class="main" id="work">
             <div class="inner">
                 <div class="row">
                     <div class="col one">
-                        <img src="http://placehold.it/400x400" alt="">
+                        <a href="#" class="thumb"><img src="http://placehold.it/400x400" alt=""><span>Text Here</span></a>
                     </div>
                     <div class="col two">
-                        <img src="http://placehold.it/400x400" alt="">
+                        <a href="#" class="thumb"><img src="http://placehold.it/400x400" alt=""><span>Text Here</span></a>
                     </div>
                     <div class="col three">
-                        <img src="http://placehold.it/400x400" alt="">
+                        <a href="#" class="thumb"><img src="http://placehold.it/400x400" alt=""><span>Text Here</span></a>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col one">
-                        <img src="http://placehold.it/400x400" alt="">
+                        <a href="#" class="thumb"><img src="http://placehold.it/400x400" alt=""><span>Text Here</span></a>
                     </div>
                     <div class="col two">
-                        <img src="http://placehold.it/400x400" alt="">
+                        <a href="#" class="thumb"><img src="http://placehold.it/400x400" alt=""><span>Text Here</span></a>
                     </div>
                     <div class="col three">
-                        <img src="http://placehold.it/400x400" alt="">
+                        <a href="#" class="thumb"><img src="http://placehold.it/400x400" alt=""><span>Text Here</span></a>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col one">
-                        <img src="http://placehold.it/400x400" alt="">
+                        <a href="#" class="thumb"><img src="http://placehold.it/400x400" alt=""><span>Text Here</span></a>
                     </div>
                     <div class="col two">
-                        <img src="http://placehold.it/400x400" alt="">
+                        <a href="#" class="thumb"><img src="http://placehold.it/400x400" alt=""><span>Text Here</span></a>
                     </div>
                     <div class="col three">
-                        <img src="http://placehold.it/400x400" alt="">
+                        <a href="#" class="thumb"><img src="http://placehold.it/400x400" alt=""><span>Text Here</span></a>
                     </div>
                 </div>
             </div>
