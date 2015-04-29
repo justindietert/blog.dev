@@ -25,7 +25,7 @@
                 <a href="#" class="pdf-resume">PDF&nbsp;&nbsp;<i class="fa fa-file-pdf-o"></i></a>
 
                 <h5>Experience</h5>
-                <h4>Freelance Web Developer</h4>
+                <h4>Freelance Designer and&nbsp;Web&nbsp;Developer</h4>
                 <h6>May 2015 &ndash; present | San Antonio, Texas</h6>
                 <ul class="experience">
                     <li>Designing and building websites and applications through proficiency in the Laravel MVC framework and the LAMP+J stack</li>
