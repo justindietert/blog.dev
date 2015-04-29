@@ -13,7 +13,7 @@
     <li class="active"><a href="{{{ action('HomeController@showWork') }}}">Work</a></li>
     <li><a href="{{{ action('HomeController@showAbout') }}}">About</a></li>
     <li><a href="{{{ action('HomeController@showResume') }}}">Resum&eacute;</a></li>
-    <li><a href="{{{ action('HomeController@showBlog') }}}">Blog</a></li>
+    <li><a href="{{{ action('PostsController@index') }}}">Blog</a></li>
 @stop
 
 @section('content')
