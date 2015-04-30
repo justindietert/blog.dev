@@ -49,10 +49,17 @@
         .one, 
         .two, 
         .three { 
-            width: 100%;  
+            width: 50%;  
             margin-bottom: 1em;
         } 
     }
+        @media only screen and (max-width: 31.25em) { 
+            .one, 
+            .two, 
+            .three { 
+                width: 100%;  
+            } 
+        }
 
 .one img, 
 .two img, 
