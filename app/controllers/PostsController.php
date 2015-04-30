@@ -58,7 +58,8 @@ class PostsController extends \BaseController {
 	        $data = ['post' => $post];
 			return View::make('posts.show')->with($data);   
 	    } catch(Exception $e) {
-	        return $e->getMessage();
+	    	$data = ['error' => $e->getMessage()];
+	        return View::make('errors.exception')->with($data);
 	    }
 	}
 
