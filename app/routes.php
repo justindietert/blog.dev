@@ -19,7 +19,8 @@ Route::get('about', 'HomeController@showAbout');
 
 Route::get('resume', 'HomeController@showResume');
 
-Route::get('blog', 'HomeController@showBlog');
 
-Route::resource('posts', 'PostsController');
-
+Route::group(['prefix' => 'blog'], function()
+{
+    Route::resource('posts', 'PostsController');
+});
