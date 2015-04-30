@@ -20,7 +20,8 @@
         <div role="main" class="main" id="blog-create-post">
             <div class="inner">
                 <h2>Create new post</h2>
-                <form action="{{{ action('PostsController@store') }}}" method="POST">
+                {{ Form::open(array('action' => 'PostsController@store')) }}
+
                     <label for="title">
                         @if($errors->has('title'))
                             Title <span class="inline-error">&mdash; {{ $errors->first('title') }}</span>
@@ -37,10 +38,11 @@
                             Body
                         @endif
                     </label>
-                    <textarea name="body" id="body" cols="30" rows="10">{{{ Input::old('body') }}}</textarea>
+                    <textarea name="body" id="body" rows="10">{{{ Input::old('body') }}}</textarea>
 
-                    <input type="submit" class="button tiny radius">
-                </form>
+                    <input type="submit" class="button tiny radius" value="Post">
+
+                {{ Form::close() }}
             </div>
         </div>
 @stop

@@ -80,7 +80,15 @@ class PostsController extends \BaseController {
 	 */
 	public function edit($id)
 	{
-		return 'Show the form for editing post: ' . $id;
+		try {
+			$post = Post::findOrFail($id);
+			$data = ['post' => $post];
+			return View::make('posts.edit')->with($data);
+		} catch(Exception $e) {
+			$data = ['error' => $e->getMessage()];
+	        return View::make('errors.exception')->with($data);
+		}
+
 	}
 
 
@@ -92,7 +100,23 @@ class PostsController extends \BaseController {
 	 */
 	public function update($id)
 	{
-		return 'Update post ' . $id . ' in storage.';
+	    // create the validator
+	    $validator = Validator::make(Input::all(), Post::$rules);
+
+	    // attempt validation
+	    if ($validator->fails()) {
+	        // validation failed, redirect to the post create page with validation errors and old inputs
+	        return Redirect::back()->withInput()->withErrors($validator);
+
+	    } else {
+	        // validation succeeded, create and save the post
+			$post = Post::findOrFail($id);
+			$post->title = Input::get('title');
+			$post->body = Input::get('body');
+			$post->save();
+			return View::make('posts.show')->with(['post' => $post]);
+	    }
+
 	}
 
 
