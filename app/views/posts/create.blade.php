@@ -21,14 +21,27 @@
             <div class="inner">
                 <h2>Create new post</h2>
                 <form action="{{{ action('PostsController@store') }}}" method="POST">
-                    <label for="title">Title</label>
+                    <label for="title">
+                        @if($errors->has('title'))
+                            Title <span class="inline-error">&mdash; {{ $errors->first('title') }}</span>
+                        @else
+                            Title
+                        @endif
+                    </label>
                     <input type="text" name="title" id="title" value="{{{ Input::old('title') }}}">
 
-                    <label for="body">Body</label>
+                    <label for="body">
+                        @if($errors->has('body'))
+                            Body <span class="inline-error">&mdash; {{ $errors->first('body') }}</span>
+                        @else 
+                            Body
+                        @endif
+                    </label>
                     <textarea name="body" id="body" cols="30" rows="10">{{{ Input::old('body') }}}</textarea>
 
-                    <input type="submit">
+                    <input type="submit" class="button tiny radius">
                 </form>
             </div>
         </div>
 @stop
+

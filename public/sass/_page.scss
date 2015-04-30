@@ -347,3 +347,35 @@ div.inner a.pdf-resume:focus {
     outline: 0; 
 }
 
+/*----------------------------------*\
+    Errors
+\*----------------------------------*/
+
+label .inline-error {
+    color: $error;
+    font-weight: 300;
+    text-transform: none;
+    letter-spacing: .0325rem;
+}
+
+/*----------------------------------*\
+    Pagination
+\*----------------------------------*/
+
+.pag {
+    text-align: center;
+}
+
+.pag ul {
+    padding: 0 0 1.5em 0; 
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.pag ul li {
+    display: inline;
+    margin: 0 1em 0 0; 
+}
+
+
+

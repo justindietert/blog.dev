@@ -23,6 +23,12 @@
                     <h2>{{{ $post->title }}}</h2>
                     <p>{{{ $post->body }}}</p>
                 @endforeach
+                
+                <hr>
+                
+                <div class="pag">
+                    {{ $posts->links() }}
+                </div>
             </div>
         </div>
 @stop

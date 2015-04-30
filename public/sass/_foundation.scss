@@ -17,6 +17,8 @@ button, .button {
   position: relative;
   text-decoration: none;
   text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.0875rem;
   -webkit-appearance: none;
   -moz-appearance: none;
   border-radius: 0;
@@ -26,12 +28,12 @@ button, .button {
   padding-bottom: 1.0625rem;
   padding-left: 2rem;
   font-size: 1rem;
-  background-color: #2ba6cb;
-  border-color: #2285a2;
+  background-color: $silver;
+  border-color: #888888;
   color: #FFFFFF;
   transition: background-color 300ms ease-out; }
   button:hover, button:focus, .button:hover, .button:focus {
-    background-color: #2285a2; }
+    background-color: #888888; }
   button:hover, button:focus, .button:hover, .button:focus {
     color: #FFFFFF; }
   button.secondary, .button.secondary {
@@ -226,18 +228,19 @@ label {
   cursor: pointer;
   display: block;
   font-weight: normal;
+  text-transform: uppercase;
+  letter-spacing: 0.0625rem;
   line-height: 1.5;
-  margin-bottom: 0;
-  /* Styles for required inputs */ }
-/*  label.right {
+  margin-bottom: 0; }
+  /* Styles for required inputs */ 
+  label.right {
     float: none !important;
     text-align: right; }
   label.inline {
     margin: 0 0 1rem 0;
-    padding: 0.5625rem 0; }*/
+    padding: 0.5625rem 0; }
   label small {
-    text-transform: capitalize;
-    color: #676767; }
+    text-transform: capitalize; }
 
 /* Attach elements to the beginning or end of an input */
 .prefix,
