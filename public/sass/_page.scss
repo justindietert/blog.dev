@@ -76,6 +76,7 @@ section#main {
 #work a {
     border-bottom: none;
     padding-bottom: 0;
+    transition: opacity 300ms ease-out;
 }
 
 #work a img {
@@ -86,7 +87,8 @@ section#main {
 #work a:hover,
 #work a:active,
 #work a:focus {
-    opacity: .60;
+    opacity: .6;
+    transition: opacity 300ms ease-out;
 }
 
 a.thumb span {
