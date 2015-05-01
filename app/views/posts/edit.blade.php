@@ -34,14 +34,14 @@
                     <label for="body">
                         @if($errors->has('body'))
                             Body <span class="inline-error">&mdash; {{ $errors->first('body') }}</span>
-                        @else 
+                        @else
                             Body
                         @endif
                     </label>
                     {{ Form::textarea('body', Input::old('body')) }}
 
                     <input type="submit" class="button tiny radius" value="Update">
-                    
+
                 {{ Form::close() }}
             </div>
         </div>

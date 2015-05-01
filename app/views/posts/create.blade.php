@@ -34,7 +34,7 @@
                     <label for="body">
                         @if($errors->has('body'))
                             Body <span class="inline-error">&mdash; {{ $errors->first('body') }}</span>
-                        @else 
+                        @else
                             Body
                         @endif
                     </label>

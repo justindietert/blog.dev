@@ -64,7 +64,7 @@ class PostsController extends \BaseController {
 	    try {
 	        $post = Post::findOrFail($id);
 	        $data = ['post' => $post];
-			return View::make('posts.show')->with($data);   
+			return View::make('posts.show')->with($data);
 	    } catch(Exception $e) {
 	    	$data = ['error' => $e->getMessage()];
 	        return View::make('errors.exception')->with($data);

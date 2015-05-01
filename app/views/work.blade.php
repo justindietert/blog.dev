@@ -29,7 +29,7 @@
                     <div class="col three">
                         <a href="#" class="thumb"><img src="/img/work/thumbs/shepard_thumb.jpg" alt="Sam Shepard"><span>Sam Shepard</span></a>
                     </div>
-   
+
                     <div class="col one">
                         <a href="#" class="thumb"><img src="http://placehold.it/400x400" alt=""><span>Item 4</span></a>
                     </div>
@@ -39,7 +39,7 @@
                     <div class="col three">
                         <a href="#" class="thumb"><img src="http://placehold.it/400x400" alt=""><span>Item 6</span></a>
                     </div>
-       
+
                     <div class="col one">
                         <a href="#" class="thumb"><img src="http://placehold.it/400x400" alt=""><span>Item 7</span></a>
                     </div>
