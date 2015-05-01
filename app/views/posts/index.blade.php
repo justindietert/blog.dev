@@ -20,7 +20,7 @@
         <div role="main" class="main" id="blog-all-posts">
             <div class="inner">
                 @foreach($posts as $post)
-                    <h2>{{{ $post->title }}}</h2>
+                    <h2><a href="{{{ action('PostsController@show', $post->id) }}}">{{{ $post->title }}}</a></h2>
                     <p>{{{ $post->body }}}</p>
                 @endforeach
 
