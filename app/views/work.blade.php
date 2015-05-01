@@ -24,10 +24,10 @@
                         <a href="#" class="thumb"><img src="/img/work/thumbs/space_thumb.jpg" alt="Partners in Space"><span>Partners in Space</span></a>
                     </div>
                     <div class="col two">
-                        <a href="#" class="thumb"><img src="http://placehold.it/400x400" alt=""><span>Item 2</span></a>
+                        <a href="#" class="thumb"><img src="/img/work/thumbs/whack_thumb.jpg" alt="Whack-a-Mole!"><span>Whack-a-Mole!</span></a>
                     </div>
                     <div class="col three">
-                        <a href="#" class="thumb"><img src="http://placehold.it/400x400" alt=""><span>Item 3</span></a>
+                        <a href="#" class="thumb"><img src="/img/work/thumbs/shepard_thumb.jpg" alt="Sam Shepard"><span>Sam Shepard</span></a>
                     </div>
    
                     <div class="col one">
