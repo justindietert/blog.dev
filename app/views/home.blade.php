@@ -21,7 +21,7 @@
             <div class="inner">
 
                 <h2>Home</h2>
-     
+
             </div>
         </div>
 @stop
