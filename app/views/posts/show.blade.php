@@ -21,6 +21,7 @@
             <div class="inner">
                 <h2>{{{ $post->title }}}</h2>
                 <p>{{{ $post->body }}}</p>
+                <a href="{{{ action('PostsController@edit', $post->id) }}}" class="edit-post"><i class="fa fa-pencil"></i>&nbsp;Edit post</a>
             </div>
         </div>
 @stop
