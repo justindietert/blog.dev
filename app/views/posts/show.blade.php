@@ -20,6 +20,7 @@
         <div role="main" class="main" id="blog-single-post">
             <div class="inner">
                 <h2>{{{ $post->title }}}</h2>
+                <h6 class="time"> {{{ $post->created_at->setTimezone('America/Chicago')->format('l, F jS Y @ g:i A') }}} </h6>
                 <p>{{{ $post->body }}}</p>
                 <a href="{{{ action('PostsController@edit', $post->id) }}}" class="edit-post"><i class="fa fa-pencil"></i>&nbsp;Edit post</a>
             </div>
