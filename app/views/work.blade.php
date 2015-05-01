@@ -21,7 +21,7 @@
             <div class="inner">
                 <div class="row">
                     <div class="col one">
-                        <a href="#" class="thumb"><img src="http://placehold.it/400x400" alt=""><span>Item 1</span></a>
+                        <a href="#" class="thumb"><img src="/img/work/thumbs/space_thumb.jpg" alt="Partners in Space"><span>Partners in Space</span></a>
                     </div>
                     <div class="col two">
                         <a href="#" class="thumb"><img src="http://placehold.it/400x400" alt=""><span>Item 2</span></a>
