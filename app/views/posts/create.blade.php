@@ -29,7 +29,7 @@
                             Title
                         @endif
                     </label>
-                    <input type="text" name="title" id="title" value="{{{ Input::old('title') }}}">
+                    {{ Form::text('title', Input::old('title')) }}
 
                     <label for="body">
                         @if($errors->has('body'))
@@ -38,7 +38,7 @@
                             Body
                         @endif
                     </label>
-                    <textarea name="body" id="body" rows="10">{{{ Input::old('body') }}}</textarea>
+                    {{ Form::textarea('body', Input::old('body')) }}
 
                     <input type="submit" class="button tiny radius" value="Post">
 
