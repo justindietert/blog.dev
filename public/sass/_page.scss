@@ -48,7 +48,7 @@ hr#topbar {
 }
 
 hr.top {
-    margin-top: 0.25em;
+    margin-top: 0;
 }
 
 section#main {
@@ -344,9 +344,10 @@ div.inner a.pdf-resume:hover,
 div.inner a.pdf-resume:active,
 div.inner a.pdf-resume:focus {
     text-decoration: none;
-    border-bottom: 0.056em dotted $silver;
-    padding-bottom: 0.111em;
+    border-bottom: none;
+    padding-bottom: 0;
     outline: 0;
+    color: $tin;
 }
 
 /*----------------------------------*\
@@ -383,15 +384,37 @@ div.inner a.edit-post {
     text-decoration: none;
     font-weight: 400;
     color: $silver;
+    font-size: 0.7875em;
+    text-transform: uppercase;
+    letter-spacing: 0.075rem;
+}
+
+div.inner button.delete-post {
+    text-decoration: none;
+    font-weight: 400;
+    color: $silver;
+    background: none;
+    text-transform: none;
+    letter-spacing: 0;
+    padding: 0;
+    display: inline;
+    font-size: 100%;
+    font-size: 0.7875em;
+    text-transform: uppercase;
+    letter-spacing: 0.075rem;
 }
 
 div.inner a.edit-post:hover,
 div.inner a.edit-post:active,
-div.inner a.edit-post:focus {
+div.inner a.edit-post:focus,
+div.inner button.delete-post:hover,
+div.inner button.delete-post:active,
+div.inner button.delete-post:focus {
     text-decoration: none;
-    border-bottom: 0.056em dotted $silver;
-    padding-bottom: 0.111em;
+    border-bottom: none;
+    padding-bottom: 0;
     outline: 0;
+    color: $tin;
 }
 
 /*----------------------------------*\

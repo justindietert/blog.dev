@@ -32,6 +32,13 @@
 
         <section id="main" class="row col">
 
+            @if (Session::has('successMessage'))
+                <div>{{{ Session::get('successMessage') }}}</div>
+            @endif
+            @if (Session::has('errorMessage'))
+                <div>{{{ Session::get('errorMessage') }}}</div>
+            @endif
+
             <header role="banner" class="banner clearfix">
                 <div id="logo">
                     <a href="{{{ action('HomeController@showHome') }}}"><img src="/img/jd-logo-black.png" width="50" alt="Justin Dietert"><span class="screen-reader-text">Justin Dietert</span></a>
