@@ -63,17 +63,17 @@
                 </ul>
 
                 <hr>
-        
+
                 <h5>Education</h5>
                 <h4>Codeup Bootcamp, 2015</h4>
                 <ul class="education">
                     <li>LAMP+J Web Development</li>
                     <li>4-month immersive bootcamp</li>
-                </ul>   
+                </ul>
                 <h4>Bachelor of Fine Arts, New Media, 2008</h4>
                 <ul class="education">
                     <li>University of Texas at San Antonio</li>
-                    <li>GPA: 4.0, Summa Cum Laude</li>
+                    <li>4.0 GPA, <em>summa cum laude</em></li>
                 </ul>
 
                 <hr>
