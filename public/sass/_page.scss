@@ -208,11 +208,11 @@ nav.navigation ul li a {
 }
     @media only screen and (max-width: 50em) {
         nav.navigation ul li a {
-                display: block;
-                padding: 1em 0 1.111em 0;
-                border-bottom: 0.056em solid $powder;
-            }
+            display: block;
+            padding: 1em 0 1.111em 0;
+            border-bottom: 0.056em solid $powder;
         }
+    }
 
 nav.navigation ul li a:hover,
 nav.navigation ul li a:active,
