@@ -19,7 +19,7 @@
 @section('content')
         <div role="main" class="main">
             <div class="inner">
-        <hr class="top">
+                <hr class="top">
                 <h2>Home</h2>
 
             </div>
