@@ -29,6 +29,16 @@ img {
     height: auto;    /* The image's aspect ratio is preserved even if it has an inline height set. */
 }
 
+a {
+    transition: all 150ms ease-out;
+}
+
+a:hover,
+a:active,
+a:focus {
+    transition: all 150ms ease-out;
+}
+
 #wrap {
     background: $white;
     min-height: 100%;
@@ -240,17 +250,20 @@ div.inner {
 
 div.inner a,
 div.inner a:visited {
-    color: $link;
+    color: $slate;
     text-decoration: none;
+    border-bottom: .25em double #7FDBFF;
+    transition: all 150ms ease-out;
 }
 
 div.inner a:hover,
 div.inner a:active,
 div.inner a:focus {
     text-decoration: none;
-    border-bottom: 0.056em dotted $link;
-    padding-bottom: 0.111em;
+    color: $slate;
     outline: 0;
+    border-bottom: .25em solid #B3EBFF;
+    transition: all 150ms ease-out;
 }
 
 /*----------------------------------*\
@@ -318,14 +331,14 @@ div.inner ul.social li a:visited {
     text-decoration: none;
     font-weight: 400;
     color: $silver;
+    border-bottom: none;
 }
 
 div.inner ul.social li a:hover,
 div.inner ul.social li a:active,
 div.inner ul.social li a:focus {
     text-decoration: none;
-    border-bottom: 0.056em dotted $silver;
-    padding-bottom: 0.111em;
+    color: $tin;
     outline: 0;
 }
 
@@ -338,6 +351,7 @@ div.inner a.pdf-resume:visited {
     text-decoration: none;
     font-weight: 400;
     color: $silver;
+    border-bottom: none;
 }
 
 div.inner a.pdf-resume:hover,
@@ -368,6 +382,7 @@ label .inline-error {
 #blog-all-posts h2 a,
 #blog-all-posts h2 a:visited {
     color: $charcoal;
+    border-bottom: none;
 }
 
 #blog-all-posts h2 a:hover,
@@ -387,6 +402,7 @@ div.inner a.edit-post {
     font-size: 0.7875em;
     text-transform: uppercase;
     letter-spacing: 0.075rem;
+    border-bottom: none;
 }
 
 div.inner button.delete-post {
@@ -402,6 +418,7 @@ div.inner button.delete-post {
     font-size: 0.7875em;
     text-transform: uppercase;
     letter-spacing: 0.075rem;
+    transition: all 150ms ease-out;
 }
 
 div.inner a.edit-post:hover,
@@ -415,6 +432,7 @@ div.inner button.delete-post:focus {
     padding-bottom: 0;
     outline: 0;
     color: $tin;
+    transition: all 150ms ease-out;
 }
 
 /*----------------------------------*\
@@ -439,7 +457,8 @@ div.inner button.delete-post:focus {
 
 .pag ul li a,
 .pag ul li a:visited {
-    color: $link-pag !important;
+    color: $link !important;
+    border-bottom: none;
 }
 
 .pag ul li a:hover,
@@ -449,6 +468,6 @@ div.inner button.delete-post:focus {
     border-bottom: none;
     padding-bottom: 0;
     outline: 0;
-    color: $link !important;
+    color: $link-hover !important;
 }
 
