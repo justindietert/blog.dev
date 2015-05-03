@@ -31,24 +31,42 @@
                     </div>
 
                     <div class="col one">
-                        <a href="#" class="thumb"><img src="http://placehold.it/400x400" alt=""><span>Item 4</span></a>
+                        <a href="#" class="thumb"><img src="/img/work/thumbs/salute_thumb.jpg" alt="Salute to Freedom"><span>Salute to Freedom</span></a>
                     </div>
                     <div class="col two">
-                        <a href="#" class="thumb"><img src="http://placehold.it/400x400" alt=""><span>Item 5</span></a>
+                        <a href="#" class="thumb"><img src="/img/work/thumbs/stem_thumb.jpg" alt="STEM Graduates"><span>STEM Graduates</span></a>
                     </div>
                     <div class="col three">
                         <a href="#" class="thumb"><img src="/img/work/thumbs/simon_thumb.jpg" alt="Simple Simon"><span>Simple Simon</span></a>
                     </div>
 
                     <div class="col one">
-                        <a href="#" class="thumb"><img src="http://placehold.it/400x400" alt=""><span>Item 7</span></a>
+                        <a href="#" class="thumb"><img src="/img/work/thumbs/hillviews_thumb.jpg" alt="Hillviews Cover"><span><em>Hillviews</em> Cover</span></a>
                     </div>
                     <div class="col two">
-                        <a href="#" class="thumb"><img src="http://placehold.it/400x400" alt=""><span>Item 8</span></a>
+                        <a href="#" class="thumb"><img src="/img/work/thumbs/social_thumb.jpg" alt="TXST Social Media"><span>TXST Social Media</span></a>
                     </div>
                     <div class="col three">
-                        <a href="#" class="thumb"><img src="http://placehold.it/400x400" alt=""><span>Item 9</span></a>
+                        <a href="#" class="thumb"><img src="/img/work/thumbs/firestation_thumb.jpg" alt="Fire Station Studios"><span>Fire Station Studios</span></a>
                     </div>
+
+                    <div class="col one">
+                        <a href="#" class="thumb"><img src="/img/work/thumbs/takeaseat_thumb.jpg" alt="Take a Seat"><span>Take a Seat</span></a>
+                    </div>
+                    <div class="col two">
+                        <a href="#" class="thumb"><img src="/img/work/thumbs/logos_thumb.jpg" alt="Various Identities"><span>Various Identities</span></a>
+                    </div>
+                    <div class="col three">
+                        <a href="#" class="thumb"><img src="/img/work/thumbs/retention_thumb.jpg" alt="TXST Retention"><span>TXST Retention</span></a>
+                    </div>
+
+                    <div class="col one">
+                        <a href="#" class="thumb"><img src="/img/work/thumbs/foster_thumb.jpg" alt="Jeff Foster Invite"><span>Jeff Foster Invite</span></a>
+                    </div>
+                    <div class="col two">
+                        <a href="#" class="thumb"><img src="/img/work/thumbs/whysociology_thumb.jpg" alt="Why Sociology?"><span>Why Sociology?</span></a>
+                    </div>
+
                 </div>
             </div>
         </div>
