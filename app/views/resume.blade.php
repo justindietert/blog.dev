@@ -28,8 +28,9 @@
                 <h4>Freelance Designer and&nbsp;Web&nbsp;Developer</h4>
                 <h6>May 2015 &ndash; present | San Antonio, Texas</h6>
                 <ul class="experience">
-                    <li>Designing and building websites and applications through proficiency in the Laravel MVC framework and the LAMP+J stack</li>
-                    <li>Development done in a Vagrant environment utilizing version control with Git and Github</li>
+                    <li>Designing and building responsive websites and applications with a focus on engaging user experiences and clean user interfaces</li>
+                    <li>Development done in a Vagrant environment utilizing the Laravel MVC framework and the LAMP+J stack</li>
+                    <li>Version control with Git and GitHub</li>
                 </ul>
 
                 <h4>Senior Graphic Designer</h4>
