@@ -22,8 +22,13 @@ h6 {
     font-weight: 400;
 }
 
+p.intro {
+    font-weight: 300;
+    font-size: 1.5em;
+}
+
 strong {
-    font-weight: 600;
+    font-weight: 700;
 }
 
 #resume hr {
@@ -66,15 +71,4 @@ strong {
 ul.experience,
 ul.education {
     margin-top: 0;
-}
-
-h6.time {
-    font-family: $sans;
-    color: $tin;
-    font-size: 0.7875em;
-    text-transform: uppercase;
-    letter-spacing: 0.09875rem;
-    text-indent: 0;
-    margin-bottom: 1em;
-    line-height: 1.5em;
 }

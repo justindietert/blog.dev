@@ -244,26 +244,30 @@ div.inner {
         }
     }
 
+div.inner.full {
+    width: 100%;
+}
+
+div.inner.middle {
+    padding-top: 0.5em;
+}
+
 /*----------------------------------*\
     Main Body Text Links
 \*----------------------------------*/
 
 div.inner a,
 div.inner a:visited {
-    color: $slate;
+    color: $link;
     text-decoration: none;
-    border-bottom: .25em double #7FDBFF;
-    transition: all 150ms ease-out;
 }
 
 div.inner a:hover,
 div.inner a:active,
 div.inner a:focus {
     text-decoration: none;
-    color: $slate;
+    color: $link-hover;
     outline: 0;
-    border-bottom: .25em solid #B3EBFF;
-    transition: all 150ms ease-out;
 }
 
 /*----------------------------------*\
@@ -379,15 +383,27 @@ label .inline-error {
     Blog
 \*----------------------------------*/
 
-#blog-all-posts h2 a,
-#blog-all-posts h2 a:visited {
+h6.time {
+    font-family: $sans;
+    color: $tin;
+    font-size: 0.7875em;
+    text-transform: uppercase;
+    letter-spacing: 0.09875rem;
+    text-indent: 0;
+    margin-bottom: 1em;
+    line-height: 1.5em;
+    // margin-top: 4.5em;
+}
+
+#blog h2 a,
+#blog h2 a:visited {
     color: $charcoal;
     border-bottom: none;
 }
 
-#blog-all-posts h2 a:hover,
-#blog-all-posts h2 a:active,
-#blog-all-posts h2 a:focus {
+#blog h2 a:hover,
+#blog h2 a:active,
+#blog h2 a:focus {
     text-decoration: none;
     border-bottom: none;
     padding-bottom: 0;
@@ -434,6 +450,14 @@ div.inner button.delete-post:focus {
     color: $tin;
     transition: all 150ms ease-out;
 }
+
+p.circle {
+    text-indent: 0;
+    margin-top: 0;
+    margin-bottom: 4.5em;
+    font-size: 80%;
+}
+
 
 /*----------------------------------*\
     Pagination
