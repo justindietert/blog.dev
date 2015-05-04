@@ -27,9 +27,8 @@
                     <p class="circle"><a href="{{{ action('PostsController@show', $post->id) }}}"><i class="fa fa-circle-o"></i></a></p>
                 @endforeach
 
-                <hr class="top">
                 <div class="pag">
-                    {{ $posts->links() }}
+                    {{ $posts->links('pagination::simple') }}
                 </div>
             </div>
         </div>

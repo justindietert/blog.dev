@@ -20,7 +20,7 @@
         <div role="main" class="main">
             <div class="inner">
                 {{-- <hr class="top"> --}}
-                <p class="intro">Justin Dietert is a designer and developer focused on clean design, thoughtful user interfaces, and engaging user experiences.</p>
+                <p class="intro">Justin Dietert is a designer and developer with an eye for clean design, thoughtful user interfaces, and engaging user experiences.</p>
             </div>
         </div>
 @stop
