@@ -415,6 +415,52 @@ h6.time {
     color: $tin;
 }
 
+div.inner div.blog-nav {
+    border-top: 0.056em solid #e2e2e2;
+    padding-bottom: 1.5em;
+    margin-top: 3em;
+}
+
+div.inner div.blog-nav a {
+    text-decoration: none;
+    font-weight: 300;
+    color: $silver;
+    font-size: 0.7875em;
+    text-transform: uppercase;
+    letter-spacing: 0.075rem;
+    border-bottom: none;
+}
+
+div.left-divider {
+    border-bottom: none;
+    border-top: none;
+    border-right: solid 1px #e2e2e2;
+    clear: none;
+    height: 1.75em;
+    width: 0;
+    padding-left: 0.5em;
+}
+
+div.right-divider {
+    border-bottom: none;
+    border-top: none;
+    border-left: solid 1px #e2e2e2;
+    clear: none;
+    height: 1.75em;
+    width: 0;
+    padding-right: 0.6125em;
+}
+
+.blue {
+    color: $link;
+}
+
+.blue:hover,
+.blue:active,
+.blue:focus {
+    color: $link-hover;
+}
+
 div.inner a.edit-post {
     text-decoration: none;
     font-weight: 400;
@@ -444,6 +490,9 @@ div.inner button.delete-post {
 div.inner a.edit-post:hover,
 div.inner a.edit-post:active,
 div.inner a.edit-post:focus,
+div.inner div.blog-nav a:hover,
+div.inner div.blog-nav a:active,
+div.inner div.blog-nav a:focus,
 div.inner button.delete-post:hover,
 div.inner button.delete-post:active,
 div.inner button.delete-post:focus {
@@ -461,6 +510,7 @@ p.circle {
     margin-bottom: 4.5em;
     font-size: 80%;
 }
+
 
 
 /*----------------------------------*\
