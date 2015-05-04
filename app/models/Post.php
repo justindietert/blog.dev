@@ -16,4 +16,12 @@ class Post extends BaseModel
     {
         $this->attributes['slug'] = Str::slug($value);
     }
+
+    /**
+     * Link to User model.
+     */
+    public function user()
+    {
+        return $this->belongsTo('User');
+    }
 }
