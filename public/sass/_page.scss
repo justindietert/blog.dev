@@ -228,14 +228,14 @@ nav.navigation ul li.active a {
 div.main {
     margin: 0 auto;
     max-width: 55.556em; /* 1000px at 18px base font size */
-    padding-bottom: 1.5em;
+    padding-bottom: 4.5em;
 }
 
 div.inner {
     position: relative;
     margin: 0 auto;
     width: 68%;
-    padding-top: 2.5em;
+    padding-top: 4.125em;
     transition: width 200ms ease-in-out;
 }
     @media only screen and (max-width: 50em) {
@@ -243,6 +243,10 @@ div.inner {
             width: 100%;
         }
     }
+
+div.inner.foot {
+    padding-top: 2.5em;
+}
 
 div.inner.full {
     width: 100%;
@@ -349,7 +353,7 @@ div.inner ul.social li a:focus {
 div.inner a.pdf-resume,
 div.inner a.pdf-resume:visited {
     position: absolute;
-    top: 4.0625em;
+    top: 5.9875em;
     right: 0;
     text-align: right;
     text-decoration: none;
@@ -469,7 +473,7 @@ p.circle {
 }
 
 .pag ul {
-    padding: 0 0 1.5em 0;
+    padding: 0;
     margin-top: 0;
     margin-bottom: 0;
 }
@@ -495,3 +499,12 @@ p.circle {
     color: $link-hover !important;
 }
 
+.cancel {
+    margin-left: 1em;
+    color: $tin !important;
+    background: $powder;
+}
+
+.cancel:hover {
+    background: #E0E0E0 !important;
+}
