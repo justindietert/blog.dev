@@ -19,6 +19,7 @@
 @section('content')
         <div role="main" class="main" id="blog-edit-post">
             <div class="inner">
+                <hr class="top">
                 <h2>Edit post: {{{ $post->id }}} </h2>
                 {{ Form::model($post, array('action' => array('PostsController@update', $post->id), 'method' => 'PUT')) }}
 
@@ -29,7 +30,7 @@
                             Title
                         @endif
                     </label>
-                    {{ Form::text('title', Input::old('title')) }}
+                    {{ Form::text('title', Input::old('title'), ['id' => 'title']) }}
 
                     <label for="body">
                         @if($errors->has('body'))
@@ -38,12 +39,12 @@
                             Body
                         @endif
                     </label>
-                    {{ Form::textarea('body', Input::old('body')) }}
+                    {{ Form::textarea('body', Input::old('body'), ['id' => 'body']) }}
 
                     <input type="submit" class="button tiny radius" value="Update">
-
+                    <a href="{{{ action('PostsController@show', $post->id) }}}" class="button tiny radius cancel">Cancel</a>
                 {{ Form::close() }}
+
             </div>
         </div>
 @stop
-

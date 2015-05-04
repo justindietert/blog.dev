@@ -17,12 +17,14 @@
 @stop
 
 @section('content')
-        <div role="main" class="main" id="blog-all-posts">
+        <div role="main" class="main" id="blog">
             <div class="inner">
                 @foreach($posts as $post)
                     <hr class="top">
+                    <h6 class="time"> {{{ $post->created_at->setTimezone('America/Chicago')->format('l, F jS Y @ g:i A') }}} </h6>
                     <h2><a href="{{{ action('PostsController@show', $post->id) }}}">{{{ $post->title }}}</a></h2>
                     <p>{{{ $post->body }}}</p>
+                    <p class="circle"><a href="{{{ action('PostsController@show', $post->id) }}}"><i class="fa fa-circle-o"></i></a></p>
                 @endforeach
 
                 <hr class="top">

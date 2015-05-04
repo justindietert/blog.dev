@@ -17,7 +17,7 @@
 @stop
 
 @section('content')
-        <div role="main" class="main" id="blog-single-post">
+        <div role="main" class="main" id="blog-show">
             <div class="inner">
                 <hr class="top">
                 <h6 class="time"> {{{ $post->created_at->setTimezone('America/Chicago')->format('l, F jS Y @ g:i A') }}} </h6>
@@ -28,6 +28,8 @@
                 {{ Form::open(array('method' => 'delete', 'action' => ['PostsController@destroy', $post->id])) }}
                     <button type="submit" class="delete-post"><i class="fa fa-times-circle-o"></i>&nbsp;Delete post</button>
                 {{ Form::close() }}
+
+                <p><a href="{{{ URL::to( 'blog/posts/' . $older ) }}}">Older</a> <a href="{{{ URL::to( 'blog/posts/' . $newer ) }}}">Newer</a></p>
             </div>
         </div>
 @stop

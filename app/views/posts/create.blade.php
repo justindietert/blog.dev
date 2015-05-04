@@ -19,6 +19,7 @@
 @section('content')
         <div role="main" class="main" id="blog-create-post">
             <div class="inner">
+                <hr class="top">
                 <h2>Create new post</h2>
                 {{ Form::open(array('action' => 'PostsController@store')) }}
 
@@ -29,7 +30,7 @@
                             Title
                         @endif
                     </label>
-                    {{ Form::text('title', Input::old('title')) }}
+                    {{ Form::text('title', Input::old('title'), ['id' => 'title']) }}
 
                     <label for="body">
                         @if($errors->has('body'))
@@ -38,7 +39,7 @@
                             Body
                         @endif
                     </label>
-                    {{ Form::textarea('body', Input::old('body')) }}
+                    {{ Form::textarea('body', Input::old('body'), ['id' => 'body']) }}
 
                     <input type="submit" class="button tiny radius" value="Post">
 
