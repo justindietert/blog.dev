@@ -23,4 +23,24 @@ class User extends Eloquent implements UserInterface, RemindableInterface {
 	 */
 	protected $hidden = array('password', 'remember_token');
 
+    /**
+     * Force username to lowercase.
+     *
+     * @return lowercase username
+     */
+	public function setUsernameAttribute($value)
+	{
+	    $this->attributes['username'] = strtolower($value);
+	}
+
+    /**
+     * Save hashed password.
+     *
+     * @return hashed string
+     */
+	public function setPasswordAttribute($value)
+	{
+	    $this->attributes['password'] = Hash::make($value);
+	}
+
 }
