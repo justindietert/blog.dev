@@ -21,7 +21,7 @@
             <div class="inner">
                 <hr class="top">
                 <h2>404: Post not found.</h2>
-                <p><a href="{{{ action('PostsController@index') }}}">Back</a></p>
+                <p><a href="{{{ action('PostsController@index') }}}" class="edit-post"><i class="fa fa-arrow-circle-left"></i> All posts</a></p>
             </div>
         </div>
 @stop

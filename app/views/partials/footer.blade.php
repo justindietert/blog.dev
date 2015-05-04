@@ -1,6 +1,6 @@
         <footer role="contentinfo" class="row col">
             <div class="foot">
-                <div class="inner centertext">
+                <div class="inner foot centertext">
                     <ul class="social">
                         <li><a href="http://github.com/justindietert">GitHub</a></li>
                         <li><a href="http://instagram.com/justindietert">Instagram</a></li>
@@ -12,4 +12,3 @@
                 </div>
             </div>
         </footer>
-        
