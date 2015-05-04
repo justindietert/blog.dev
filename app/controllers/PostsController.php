@@ -9,7 +9,7 @@ class PostsController extends \BaseController {
 	 */
 	public function index()
 	{
-		$posts = Post::paginate(4);
+		$posts = Post::orderBy('id', 'desc')->paginate(4);
 		$data = ['posts' => $posts];
 		return View::make('posts.index')->with($data);
 	}
@@ -64,7 +64,11 @@ class PostsController extends \BaseController {
 	    try {
 	        $post = Post::findOrFail($id);
 	        $data = ['post' => $post];
-			return View::make('posts.show')->with($data);
+
+	        $older = Post::where('id', '<', $post->id)->max('id');
+	        $newer = Post::where('id', '>', $post->id)->min('id');
+
+			return View::make('posts.show')->with('older', $older)->with('newer', $newer)->with($data);
 	    } catch(Exception $e) {
 	    	$data = ['error' => $e->getMessage()];
 	        return View::make('errors.exception')->with($data);
@@ -117,9 +121,12 @@ class PostsController extends \BaseController {
 			$post->body = Input::get('body');
 			$post->save();
 
+			$older = Post::where('id', '<', $post->id)->max('id');
+	        $newer = Post::where('id', '>', $post->id)->min('id');
+
 			Session::flash('successMessage', 'Post successfully updated.');
 
-			return View::make('posts.show')->with(['post' => $post]);
+			return View::make('posts.show')->with(['post' => $post])->with('older', $older)->with('newer', $newer);
 	    }
 
 	}
