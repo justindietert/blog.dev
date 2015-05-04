@@ -38,6 +38,9 @@ class PostsController extends \BaseController {
 
 	    // attempt validation
 	    if ($validator->fails()) {
+	    	Session::flash('errorMessage', 'Post not saved. See errors below.');
+	    	Log::info('Invalid user inputs from create view. Logged below:');
+	    	Log::info(Input::all());
 	        // validation failed, redirect to the post create page with validation errors and old inputs
 	        return Redirect::back()->withInput()->withErrors($validator);
 
@@ -45,8 +48,10 @@ class PostsController extends \BaseController {
 	        // validation succeeded, create and save the post
 			$post = new Post;
 			$post->title = Input::get('title');
+			$post->slug = Input::get('title');
 			$post->body = Input::get('body');
 			$post->save();
+			Session::flash('successMessage', 'Post successfully saved.');
 			return Redirect::action('PostsController@index');
 	    }
 
@@ -70,8 +75,9 @@ class PostsController extends \BaseController {
 
 			return View::make('posts.show')->with('older', $older)->with('newer', $newer)->with($data);
 	    } catch(Exception $e) {
-	    	$data = ['error' => $e->getMessage()];
-	        return View::make('errors.exception')->with($data);
+	    	Log::info('Page not found. See below:');
+	    	Log::error($e);
+	    	App::abort(404);
 	    }
 	}
 
@@ -89,8 +95,9 @@ class PostsController extends \BaseController {
 			$data = ['post' => $post];
 			return View::make('posts.edit')->with($data);
 		} catch(Exception $e) {
-			$data = ['error' => $e->getMessage()];
-	        return View::make('errors.exception')->with($data);
+			Log::info('Page not found. See below:');
+	    	Log::error($e);
+	    	App::abort(404);
 		}
 
 	}
@@ -111,6 +118,8 @@ class PostsController extends \BaseController {
 	    if ($validator->fails()) {
 
 	    	Session::flash('errorMessage', 'Post not saved. See errors below.');
+	    	Log::info('Invalid user inputs from edit view. Logged below:');
+	    	Log::info(Input::all());
 	        // validation failed, redirect to the post create page with validation errors and old inputs
 	        return Redirect::back()->withInput()->withErrors($validator);
 
@@ -118,6 +127,7 @@ class PostsController extends \BaseController {
 	        // validation succeeded, create and save the post
 			$post = Post::findOrFail($id);
 			$post->title = Input::get('title');
+			$post->slug = Input::get('title');
 			$post->body = Input::get('body');
 			$post->save();
 
