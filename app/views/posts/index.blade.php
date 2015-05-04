@@ -22,9 +22,9 @@
                 @foreach($posts as $post)
                     <hr class="top">
                     <h6 class="time">{{{ $post->created_at }}}</h6>
-                    <h2><a href="{{{ action('PostsController@show', $post->id) }}}">{{{ $post->title }}}</a></h2>
+                    <h2><a href="{{{ action('PostsController@show', $post->slug) }}}">{{{ $post->title }}}</a></h2>
                     <p>{{{ $post->body }}}</p>
-                    <p class="circle"><a href="{{{ action('PostsController@show', $post->id) }}}"><i class="fa fa-circle-o"></i></a></p>
+                    <p class="circle"><a href="{{{ action('PostsController@show', $post->slug) }}}"><i class="fa fa-circle-o"></i></a></p>
                 @endforeach
 
                 <div class="pag">

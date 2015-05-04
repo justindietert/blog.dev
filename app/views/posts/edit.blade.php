@@ -43,7 +43,7 @@
                     {{ Form::textarea('body', Input::old('body'), ['id' => 'body']) }}
 
                     <input type="submit" class="button tiny radius" value="Update">
-                    <a href="{{{ action('PostsController@show', $post->id) }}}" class="button tiny radius cancel">Cancel</a>
+                    <a href="{{{ action('PostsController@show', $post->slug) }}}" class="button tiny radius cancel">Cancel</a>
                 {{ Form::close() }}
 
             </div>
