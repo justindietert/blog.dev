@@ -17,7 +17,7 @@
 @stop
 
 @section('content')
-        <div role="main" class="main" id="blog-all-posts">
+        <div role="main" class="main" id="not-found">
             <div class="inner">
                 <hr class="top">
                 <h2>404: Page not found.</h2>

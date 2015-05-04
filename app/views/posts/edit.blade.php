@@ -20,6 +20,7 @@
         <div role="main" class="main" id="blog-edit-post">
             <div class="inner">
                 <hr class="top">
+                <h6 class="time">Last update: {{{ $post->updated_at }}}</h6>
                 <h2>Edit post: {{{ $post->id }}} </h2>
                 {{ Form::model($post, array('action' => array('PostsController@update', $post->id), 'method' => 'PUT')) }}
 
