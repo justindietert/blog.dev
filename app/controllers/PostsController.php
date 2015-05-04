@@ -66,14 +66,22 @@ class PostsController extends \BaseController {
 	 */
 	public function show($id)
 	{
+		$post = null;
+
 	    try {
-	        $post = Post::findOrFail($id);
+	        if(is_numeric($id)) {
+	        	$post = Post::findOrFail($id);
+	        } else {
+		        $post = Post::where('slug', '=', $id)->firstOrFail();
+	        }
+
 	        $data = ['post' => $post];
 
 	        $older = Post::where('id', '<', $post->id)->max('id');
 	        $newer = Post::where('id', '>', $post->id)->min('id');
 
 			return View::make('posts.show')->with('older', $older)->with('newer', $newer)->with($data);
+
 	    } catch(Exception $e) {
 	    	Log::info('Page not found. See below:');
 	    	Log::error($e);
@@ -91,9 +99,17 @@ class PostsController extends \BaseController {
 	public function edit($id)
 	{
 		try {
-			$post = Post::findOrFail($id);
+
+			if(is_numeric($id)) {
+	        	$post = Post::findOrFail($id);
+	        } else {
+		        $post = Post::where('slug', '=', $id)->firstOrFail();
+	        }
+
 			$data = ['post' => $post];
+
 			return View::make('posts.edit')->with($data);
+
 		} catch(Exception $e) {
 			Log::info('Page not found. See below:');
 	    	Log::error($e);
