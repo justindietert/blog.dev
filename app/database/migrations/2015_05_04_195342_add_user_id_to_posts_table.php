@@ -3,7 +3,7 @@
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class AddSlugToPostsTable extends Migration {
+class AddUserIdToPostsTable extends Migration {
 
 	/**
 	 * Run the migrations.
@@ -14,7 +14,8 @@ class AddSlugToPostsTable extends Migration {
 	{
 		Schema::table('posts', function(Blueprint $table)
 		{
-			$table->string('slug', 255)->unique()->index();
+		    $table->integer('user_id')->unsigned();
+		    $table->foreign('user_id')->references('id')->on('users');
 		});
 	}
 
@@ -27,7 +28,8 @@ class AddSlugToPostsTable extends Migration {
 	{
 		Schema::table('posts', function(Blueprint $table)
 		{
-			$table->dropColumn('slug');
+		    $table->dropForeign('posts_user_id_foreign');
+		    $table->dropColumn('user_id');
 		});
 	}
 
