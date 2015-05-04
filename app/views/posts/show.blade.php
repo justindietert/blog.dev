@@ -29,7 +29,19 @@
                     <button type="submit" class="delete-post"><i class="fa fa-times-circle-o"></i>&nbsp;Delete post</button>
                 {{ Form::close() }}
 
-                <p><a href="{{{ URL::to( 'blog/posts/' . $older ) }}}">Older</a> <a href="{{{ URL::to( 'blog/posts/' . $newer ) }}}">Newer</a></p>
+                <p>
+                    @if($post->id === $post->min('id'))
+                        <a href="{{{ action('PostsController@index') }}}">Back to All Posts</a>
+                    @else
+                        <a href="{{{ URL::to('blog/posts/' . $older) }}}">Older</a>&nbsp;
+                    @endif
+
+                    @if($post->id === $post->max('id'))
+                        <a href="{{{ action('PostsController@index') }}}">Back to All Posts</a>
+                    @else
+                        <a href="{{{ URL::to('blog/posts/' . $newer) }}}">Newer</a>
+                    @endif
+                </p>
             </div>
         </div>
 @stop
