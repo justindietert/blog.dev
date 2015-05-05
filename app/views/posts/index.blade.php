@@ -21,7 +21,7 @@
             <div class="inner">
                 @foreach($posts as $post)
                     <hr class="top">
-                    <h6 class="time">{{{ $post->created_at }}}</h6>
+                    <h6 class="time">{{{ $post->created_at }}} | {{{ $post->user->username }}}</h6>
                     <h2><a href="{{{ action('PostsController@show', $post->slug) }}}">{{{ $post->title }}}</a></h2>
                     <p>{{{ $post->body }}}</p>
                     <p class="circle"><a href="{{{ action('PostsController@show', $post->slug) }}}"><i class="fa fa-circle-o"></i></a></p>
