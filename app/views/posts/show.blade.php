@@ -34,7 +34,7 @@
                         @if($post->id === $post->min('id'))
                             <a href="{{{ action('PostsController@index') }}}"><i class="fa fa-circle-o blue"></i> All Posts</a>
                         @else
-                            <a href="{{{ URL::to('blog/posts/' . $older) }}}"><i class="fa fa-caret-left"></i> Older</a>
+                            <a href="{{{ URL::to('blog/posts/' . $older->slug) }}}"><i class="fa fa-caret-left"></i> Older</a>
                         @endif
                     </div>
                     <div class="left left-divider"></div>
@@ -43,7 +43,7 @@
                         @if($post->id === $post->max('id'))
                             <a href="{{{ action('PostsController@index') }}}">All Posts <i class="fa fa-circle-o blue"></i></a>
                         @else
-                            <a href="{{{ URL::to('blog/posts/' . $newer) }}}">Newer <i class="fa fa-caret-right"></i></a>
+                            <a href="{{{ URL::to('blog/posts/' . $newer->slug) }}}">Newer <i class="fa fa-caret-right"></i></a>
                         @endif
                     </div>
                     <div class="right right-divider"></div>

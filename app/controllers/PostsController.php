@@ -75,8 +75,8 @@ class PostsController extends \BaseController {
 		        $post = Post::where('slug', '=', $id)->firstOrFail();
 	        }
 
-	        $older = Post::where('id', '<', $post->id)->max('id');
-	        $newer = Post::where('id', '>', $post->id)->min('id');
+	        $older = Post::where('id', '<', $post->id)->first();
+	        $newer = Post::where('id', '>', $post->id)->first();
 
 	        $data = [
 	        	'post'  => $post,
@@ -151,8 +151,8 @@ class PostsController extends \BaseController {
 			$post->body = Input::get('body');
 			$post->save();
 
-			$older = Post::where('id', '<', $post->id)->max('id');
-	        $newer = Post::where('id', '>', $post->id)->min('id');
+			$older = Post::where('id', '<', $post->id)->first();
+	        $newer = Post::where('id', '>', $post->id)->first();
 
 	        $data = [
 	        	'post'  => $post,
