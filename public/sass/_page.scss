@@ -228,7 +228,7 @@ nav.navigation ul li.active a {
 div.main {
     margin: 0 auto;
     max-width: 55.556em; /* 1000px at 18px base font size */
-    padding-bottom: 4.5em;
+    padding-bottom: 6em;
 }
 
 div.inner {
@@ -519,7 +519,7 @@ p.circle {
 .pag {
     text-align: center;
     color: $silver;
-    border-top: 0.056em solid #e2e2e2;
+    // border-top: 0.056em solid #e2e2e2;
 }
 
 .pag ul {
