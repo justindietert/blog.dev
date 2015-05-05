@@ -9,7 +9,7 @@ class PostsController extends \BaseController {
 	 */
 	public function index()
 	{
-		$posts = Post::orderBy('id', 'desc')->simplePaginate(4);
+		$posts = Post::with('user')->orderBy('id', 'desc')->simplePaginate(4);
 		$data = ['posts' => $posts];
 		return View::make('posts.index')->with($data);
 	}
@@ -47,9 +47,10 @@ class PostsController extends \BaseController {
 	    } else {
 	        // validation succeeded, create and save the post
 			$post = new Post;
-			$post->title = Input::get('title');
-			$post->slug = Input::get('title');
-			$post->body = Input::get('body');
+			$post->title    = Input::get('title');
+			$post->slug     = Input::get('title');
+			$post->body     = Input::get('body');
+			// $post->user_id  = Auth::id();
 			$post->save();
 			Session::flash('successMessage', 'Post successfully saved.');
 			return Redirect::action('PostsController@index');
