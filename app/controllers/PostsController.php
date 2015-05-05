@@ -75,12 +75,16 @@ class PostsController extends \BaseController {
 		        $post = Post::where('slug', '=', $id)->firstOrFail();
 	        }
 
-	        $data = ['post' => $post];
-
 	        $older = Post::where('id', '<', $post->id)->max('id');
 	        $newer = Post::where('id', '>', $post->id)->min('id');
 
-			return View::make('posts.show')->with('older', $older)->with('newer', $newer)->with($data);
+	        $data = [
+	        	'post'  => $post,
+	        	'older' => $older,
+	        	'newer' => $newer
+        	];
+
+			return View::make('posts.show')->with($data);
 
 	    } catch(Exception $e) {
 	    	Log::info('Page not found. See below:');
@@ -150,9 +154,15 @@ class PostsController extends \BaseController {
 			$older = Post::where('id', '<', $post->id)->max('id');
 	        $newer = Post::where('id', '>', $post->id)->min('id');
 
+	        $data = [
+	        	'post'  => $post,
+	        	'older' => $older,
+	        	'newer' => $newer
+	        ];
+
 			Session::flash('successMessage', 'Post successfully updated.');
 
-			return View::make('posts.show')->with(['post' => $post])->with('older', $older)->with('newer', $newer);
+			return View::make('posts.show')->with($data);
 	    }
 
 	}
