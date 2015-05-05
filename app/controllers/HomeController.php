@@ -17,7 +17,7 @@ class HomeController extends BaseController {
 
 	// public function __construct()
 	// {
-	// 	$this->beforeFilter( 'auth', array('only' => array('create', 'edit')) );
+	// 	$this->beforeFilter( 'auth', array('except' => array('create', 'edit')) );
 	// }
 
 	public function showHome()
@@ -43,27 +43,44 @@ class HomeController extends BaseController {
 		return View::make('resume');
 	}
 
-	// public function showLogin()
-	// {
-	// 	// return view for login form
-	// }
 
-	// public function checkLogin()
-	// {
-	// 	// need to add validation
-	// 	$email     = Input::get('email');
-	// 	$password  = Input::get('password');
+	public function login()
+	{
+		return View::make('login');
+	}
 
-	// 	if (Auth::attempt(array('email' => $email, 'password' => $password))) {
-	// 	    return Redirect::intended('/');
-	// 	} else {
-	// 	    // login failed, go back to the login screen
-	// 	    // session flash message: login failed
-	// 	}
-	// }
 
-	// public function logout()
-	// {
-	// 	Auth::logout();
-	// }
+	public function doLogin()
+	{
+
+		$emailOrUsername = Input::get('email_or_username');
+		$password        = Input::get('password');
+
+		if (Auth::attempt(array('email' => $emailOrUsername, 'password' => $password))
+			|| (Auth::attempt(array('username' => $emailOrUsername, 'password' => $password))))
+		{
+			Session::flash('successMessage', 'Logged in successfully.');
+		    return Redirect::intended();
+		}
+		else
+		{
+		    // session flash message: login failed
+		    Session::flash('errorMessage', 'Login failed. Please try again.');
+		    // login failed, go back to the login screen
+		    return Redirect::action('HomeController@login')->withInput();
+		}
+
+	}
+
+
+	public function logout()
+	{
+		Auth::logout();
+
+		Session::flash('successMessage', 'Logged out successfully.');
+
+		return Redirect::action('HomeController@showHome');
+	}
+
+
 }

@@ -2,6 +2,11 @@
 
 class PostsController extends \BaseController {
 
+	public function __construct()
+	{
+		$this->beforeFilter( 'auth', array('except' => array('index', 'show')) );
+	}
+
 	/**
 	 * Display a listing of the resource.
 	 *
@@ -37,20 +42,23 @@ class PostsController extends \BaseController {
 	    $validator = Validator::make(Input::all(), Post::$rules);
 
 	    // attempt validation
-	    if ($validator->fails()) {
+	    if ($validator->fails())
+	    {
 	    	Session::flash('errorMessage', 'Post not saved. See errors below.');
 	    	Log::info('Invalid user inputs from create view. Logged below:');
 	    	Log::info(Input::all());
 	        // validation failed, redirect to the post create page with validation errors and old inputs
 	        return Redirect::back()->withInput()->withErrors($validator);
 
-	    } else {
+	    }
+	    else
+	    {
 	        // validation succeeded, create and save the post
 			$post = new Post;
 			$post->title    = Input::get('title');
 			$post->slug     = Input::get('title');
 			$post->body     = Input::get('body');
-			// $post->user_id  = Auth::id();
+			$post->user_id  = Auth::id();
 			$post->save();
 			Session::flash('successMessage', 'Post successfully saved.');
 			return Redirect::action('PostsController@index');
