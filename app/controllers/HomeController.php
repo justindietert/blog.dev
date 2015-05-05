@@ -15,6 +15,11 @@ class HomeController extends BaseController {
 	|
 	*/
 
+	// public function __construct()
+	// {
+	// 	$this->beforeFilter( 'auth', array('only' => array('create', 'edit')) );
+	// }
+
 	public function showHome()
 	{
 		return View::make('home');
@@ -31,12 +36,34 @@ class HomeController extends BaseController {
 	{
 		return View::make('about');
 	}
-	
+
 
 	public function showResume()
 	{
 		return View::make('resume');
 	}
 
+	// public function showLogin()
+	// {
+	// 	// return view for login form
+	// }
 
+	// public function checkLogin()
+	// {
+	// 	// need to add validation
+	// 	$email     = Input::get('email');
+	// 	$password  = Input::get('password');
+
+	// 	if (Auth::attempt(array('email' => $email, 'password' => $password))) {
+	// 	    return Redirect::intended('/');
+	// 	} else {
+	// 	    // login failed, go back to the login screen
+	// 	    // session flash message: login failed
+	// 	}
+	// }
+
+	// public function logout()
+	// {
+	// 	Auth::logout();
+	// }
 }
