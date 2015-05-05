@@ -24,3 +24,9 @@ Route::group(['prefix' => 'blog'], function()
 {
     Route::resource('posts', 'PostsController');
 });
+
+
+Route::get('login', 'HomeController@login');
+Route::post('login', 'HomeController@doLogin');
+
+Route::get('logout', 'HomeController@logout');
