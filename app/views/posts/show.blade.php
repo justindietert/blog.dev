@@ -23,11 +23,16 @@
                 <h6 class="time">{{{ $post->created_at }}} | {{{ $post->user->username }}}</h6>
                 <h2>{{{ $post->title }}}</h2>
                 <p>{{{ $post->body }}}</p>
-                <a href="{{{ action('PostsController@edit', $post->slug) }}}" class="edit-post"><i class="fa fa-pencil"></i>&nbsp;Edit post</a>
 
-                {{ Form::open(array('method' => 'delete', 'action' => ['PostsController@destroy', $post->id])) }}
-                    <button type="submit" class="delete-post"><i class="fa fa-times-circle-o"></i>&nbsp;Delete post</button>
-                {{ Form::close() }}
+                @if(Auth::check())
+                    <a href="{{{ action('PostsController@edit', $post->slug) }}}" class="edit-post"><i class="fa fa-pencil"></i>&nbsp;Edit post</a>
+
+                    {{ Form::open(array('method' => 'delete', 'action' => ['PostsController@destroy', $post->id])) }}
+                        <button type="submit" class="delete-post"><i class="fa fa-times-circle-o"></i>&nbsp;Delete post</button>
+                    {{ Form::close() }}
+                @else
+                    <p class="circle"><i class="fa fa-circle-o"></i></p>
+                @endif
 
                 <div class="blog-nav clearfix">
                     <div class="left clearfix">
