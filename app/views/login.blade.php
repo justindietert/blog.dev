@@ -25,23 +25,11 @@
                 <h5>Log in</h5>
                 {{ Form::open(array('action' => 'HomeController@doLogin')) }}
 
-                    <label for="email">
-                        @if($errors->has('email'))
-                            Email <span class="inline-error">&mdash; {{ $errors->first('email') }}</span>
-                        @else
-                            Email
-                        @endif
-                    </label>
-                    {{ Form::text('email', Input::old('email'), ['id' => 'email']) }}
+                    {{ Form::label('email_or_username', 'Email or Username') }}
+                    {{ Form::text('email_or_username', Input::old('email_or_username')) }}
 
-                    <label for="password">
-                        @if($errors->has('password'))
-                            Password <span class="inline-error">&mdash; {{ $errors->first('password') }}</span>
-                        @else
-                            Password
-                        @endif
-                    </label>
-                    {{ Form::password('password', Input::old('password'), ['id' => 'password']) }}
+                    {{ Form::label('password', 'password') }}
+                    {{ Form::password('password') }}
 
                     <input type="submit" class="button tiny radius" value="Enter">
 
