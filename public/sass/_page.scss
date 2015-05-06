@@ -65,12 +65,40 @@ section#main {
     padding-top: 3.25em;
     padding-bottom: 11em; /* Height of footer element */
     background: $white;
+    position: relative;
 }
     @media only screen and (max-width: 28.125em) {
         section#main {
                 padding-bottom: 17.325em; /* Height of footer element */
             }
         }
+
+.flash {
+    z-index: 400;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: .5em 1.5em 0 1.5em;
+    color: $white;
+    font-weight: 300;
+    letter-spacing: 1px;
+    letter-spacing: 0.056rem;
+
+    p {
+        margin-bottom: .75em;
+    }
+}
+
+.flash#failure {
+    background: $error;
+    background: rgba(232, 57, 68, .65);
+}
+
+.flash#success {
+    background: #3D9970;
+    background: rgba(61, 153, 112, .65);
+}
 
 #logo {
     float: left;
@@ -156,6 +184,7 @@ nav.navigation {
     width: 68%;
     margin: 0 auto;
     padding-top: 0.555em;
+    z-index: 300;
 }
     @media only screen and (max-width: 50em) {
         nav.navigation {
@@ -353,7 +382,7 @@ div.inner ul.social li a:focus {
 div.inner a.pdf-resume,
 div.inner a.pdf-resume:visited {
     position: absolute;
-    top: 5.9875em;
+    top: 4.3875em;
     right: 0;
     text-align: right;
     text-decoration: none;

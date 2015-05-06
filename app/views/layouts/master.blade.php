@@ -30,14 +30,14 @@
     <div id="wrap" class="clearfix">
         <hr id="topbar">
 
-        <section id="main" class="row col">
+        @if (Session::has('successMessage'))
+            <div class="flash" id="success"><p>&plus; {{{ Session::get('successMessage') }}}</p></div>
+        @endif
+        @if (Session::has('errorMessage'))
+            <div class="flash" id="failure"><p>&osol; {{{ Session::get('errorMessage') }}}</p></div>
+        @endif
 
-            @if (Session::has('successMessage'))
-                <div class="flash">{{{ Session::get('successMessage') }}}</div>
-            @endif
-            @if (Session::has('errorMessage'))
-                <div class="flash">{{{ Session::get('errorMessage') }}}</div>
-            @endif
+        <section id="main" class="row col">
 
             <header role="banner" class="banner clearfix">
                 <div id="logo">
