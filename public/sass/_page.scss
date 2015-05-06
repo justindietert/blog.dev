@@ -421,6 +421,14 @@ label .inline-error {
     Blog
 \*----------------------------------*/
 
+input[type="text"] {
+    font-family: $sans;
+}
+
+input[type="text"].postfix {
+    text-align: left;
+}
+
 .user {
     color: $user;
     font-family: $serif;

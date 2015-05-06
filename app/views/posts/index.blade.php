@@ -19,6 +19,17 @@
 @section('content')
         <div role="main" class="main" id="blog">
             <div class="inner">
+                {{ Form::open(array('action' => array('PostsController@index'), 'method' => 'GET')) }}
+                    <div class="row">
+                        <div class="col search-field">
+                            {{ Form::text('search', null, ['class' => 'postfix']) }}
+                        </div>
+                        <div class="col search-button">
+                            {{ Form::submit('Search', ['class' => 'button tiny postfix']) }}
+                        </div>
+                    </div>
+                {{ Form::close() }}
+
                 @foreach($posts as $post)
                     <hr class="top">
                     <h6 class="time"><span class="user">{{{ $post->user->username }}}</span> | {{{ $post->created_at }}}</h6>
