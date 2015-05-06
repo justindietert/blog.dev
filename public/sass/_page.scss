@@ -421,6 +421,16 @@ label .inline-error {
     Blog
 \*----------------------------------*/
 
+.user {
+    color: $user;
+    font-family: $serif;
+    text-transform: none;
+    letter-spacing: 1px;
+    letter-spacing: 0.056rem;
+    font-style: italic;
+    font-size: 1.25em;
+}
+
 h6.time {
     font-family: $sans;
     color: $tin;

@@ -20,7 +20,7 @@
         <div role="main" class="main" id="blog-show">
             <div class="inner">
                 <hr class="top">
-                <h6 class="time">{{{ $post->created_at }}} | {{{ $post->user->username }}}</h6>
+                <h6 class="time"><span class="user">{{{ $post->user->username }}}</span> | {{{ $post->created_at }}}</h6>
                 <h2>{{{ $post->title }}}</h2>
                 <p>{{{ $post->body }}}</p>
 
