@@ -566,6 +566,11 @@ p.circle {
 \*----------------------------------*/
 
 .pag {
+    font-family: $sans;
+    font-weight: 300;
+    font-size: 0.7875em;
+    text-transform: uppercase;
+    letter-spacing: 0.075rem;
     text-align: center;
     color: $silver;
     // border-top: 0.056em solid #e2e2e2;
