@@ -14,7 +14,7 @@ class AddSlugToPostsTable extends Migration {
 	{
 		Schema::table('posts', function(Blueprint $table)
 		{
-			$table->string('slug', 255)->unique()->index();
+			$table->string('slug', 255)->unique();
 		});
 	}
 
