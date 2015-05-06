@@ -11,8 +11,15 @@ $('a.menu').click(
         } else {
             $('a.menu').html('Menu');
             $('nav.navigation').removeAttr('style');
-        }        
-        
+        }
+
     });
 
 });
+
+
+/* Session::flash message fade out
+------------------------------------------------------- */
+setTimeout(function(){
+    $(".flash").fadeOut("slow");
+},3000);

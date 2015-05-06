@@ -33,10 +33,10 @@
         <section id="main" class="row col">
 
             @if (Session::has('successMessage'))
-                <div>{{{ Session::get('successMessage') }}}</div>
+                <div class="flash">{{{ Session::get('successMessage') }}}</div>
             @endif
             @if (Session::has('errorMessage'))
-                <div>{{{ Session::get('errorMessage') }}}</div>
+                <div class="flash">{{{ Session::get('errorMessage') }}}</div>
             @endif
 
             <header role="banner" class="banner clearfix">
