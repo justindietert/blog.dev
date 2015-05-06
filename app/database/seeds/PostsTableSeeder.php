@@ -19,12 +19,16 @@ class PostsTableSeeder extends Seeder
         for ($i = 1; $i <= 100; $i++) {
             $rand_body  = rand(50, 300);
             $rand_title = rand(2, 4);
+            // Find a random user to assign to the post->user_id.
+            $user = User::all()->random();
+            $title = $faker->sentence($rand_title);
+            $title = str_replace('.', '', $title);
 
             $post = new Post();
-            $post->title = $faker->sentence($rand_title);
+            $post->title = $title;
             $post->slug = $post->title;
             $post->body = $faker->sentence($rand_body);
-            $post->user_id = rand(1, 100);
+            $post->user_id = $user->id;
             $post->save();
         }
 
