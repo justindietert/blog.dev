@@ -31,7 +31,7 @@
                     {{ Form::label('password', 'password') }}
                     {{ Form::password('password') }}
 
-                    <input type="submit" class="button tiny radius" value="Enter">
+                    {{ Form::submit('Enter', ['class' => 'button tiny radius']) }}
 
                 {{ Form::close() }}
 

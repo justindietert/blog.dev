@@ -15,11 +15,6 @@ class HomeController extends BaseController {
 	|
 	*/
 
-	// public function __construct()
-	// {
-	// 	$this->beforeFilter( 'auth', array('except' => array('create', 'edit')) );
-	// }
-
 	public function showHome()
 	{
 		return View::make('home');
