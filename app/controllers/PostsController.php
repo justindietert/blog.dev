@@ -5,6 +5,8 @@ class PostsController extends \BaseController {
 	public function __construct()
 	{
 		$this->beforeFilter( 'auth', ['except' => ['index', 'show']] );
+		// Call the parent constructor for CSRF token
+		parent::__construct();
 	}
 
 	/**
