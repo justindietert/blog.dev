@@ -8,9 +8,10 @@
 \*---------------------------------------------------------*/
 
 body {
-    font-family: $sans;
+    font-family: $serif;
     font-weight: 400;
     font-kerning: normal;
+    font-variant-ligatures: common-ligatures;
 }
 
 h1,
@@ -19,12 +20,13 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: $serif;
+    font-family: $sans;
     font-weight: 400;
 }
 
 p.intro {
-    font-weight: 200;
+    font-family: $serif;
+    font-weight: 400;
     font-size: 1.75em;
 }
 
@@ -36,12 +38,12 @@ strong {
     margin-bottom: 1.5em;
 }
 
-#resume h4 {
+#resume h3 {
     margin-bottom: 0.5rem;
 }
 
-#resume h5,
-#login h5 {
+#resume h2,
+#login h2 {
     font-family: $sans;
     font-weight: 700;
     text-transform: uppercase;
@@ -73,4 +75,18 @@ strong {
 ul.experience,
 ul.education {
     margin-top: 0;
+}
+
+abbr {
+    font-family: 'Alegreya SC';
+    letter-spacing: 1px;
+    letter-spacing: 0.056rem;
+}
+
+abbr[title] {
+    border-bottom: 1px dotted $silver;
+}
+
+label, button, .button {
+    font-family: $sans;
 }

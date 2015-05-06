@@ -22,7 +22,7 @@
 
                 <hr class="top">
 
-                <h5>Log in</h5>
+                <h2 class="typl8-epsilon">Log in</h2>
                 {{ Form::open(array('action' => 'HomeController@doLogin')) }}
 
                     {{ Form::label('email_or_username', 'Email or Username') }}

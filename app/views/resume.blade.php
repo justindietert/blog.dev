@@ -24,18 +24,18 @@
 
                 <a href="#" class="pdf-resume">PDF&nbsp;&nbsp;<i class="fa fa-file-pdf-o"></i></a>
 
-                <h5>Experience</h5>
-                <h4>Freelance Designer and&nbsp;Web&nbsp;Developer</h4>
+                <h2 class="typl8-epsilon">Experience</h2>
+                <h3 class="typl8-delta">Freelance Designer and&nbsp;Web&nbsp;Developer</h3>
                 <h6>May 2015 &ndash; present | San Antonio, Texas</h6>
                 <ul class="experience">
                     <li>Designing and building responsive websites and applications with a focus on engaging user experiences and clean user interfaces</li>
-                    <li>Development done in a Vagrant environment utilizing the Laravel MVC framework and the LAMP+J stack</li>
+                    <li>Development done in a Vagrant environment utilizing the Laravel <abbr title="Model, View, Controller">MVC</abbr> framework and the <abbr title="Linux, Apache, MySQL, PHP + JavaScript">LAMP+J</abbr> stack</li>
                     <li>Version control with Git and GitHub</li>
                 </ul>
 
-                <h4>Senior Graphic Designer</h4>
+                <h3 class="typl8-delta">Senior Graphic Designer</h3>
                 <h6>Texas State University, Office of University Marketing</h6>
-                <h6>July 2012 &ndash; December 2014 | San Marcos, Texas</h6>
+                <h6>July 2012 &ndash; December 2014 | San Marcos,&nbsp;Texas</h6>
                 <ul class="experience">
                     <li>Worked with clients from many of the diverse departments and offices of the university to effectively market their programs and services to both internal and external audiences</li>
                     <li>Designed within the university’s branding guidelines, managing multiple projects simultaneously from conception to completion</li>
@@ -43,17 +43,17 @@
                     <li>Collaborated with in-house team of graphic designers, writers, photographers, and videographers on a daily basis</li>
                 </ul>
 
-                <h4>Marketing and Design Manager</h4>
+                <h3 class="typl8-delta">Marketing and Design Manager</h3>
                 <h6>Digital Pro Lab</h6>
                 <h6>2010 &ndash; 2012 | San Antonio, Texas</h6>
                 <ul class="experience">
                     <li>Increased sales and revenue by marketing company services to professional clients and supervised design staff to ensure success of projects</li>
-                    <li>Lead designer for print and online advertising campaigns and in charge of monthly email newsletters from concept to HTML code</li>
+                    <li>Lead designer for print and online advertising campaigns and in charge of monthly email newsletters from concept to <abbr>HTML</abbr> code</li>
                     <li>Assisted with vendor and product selection, product development, and regularly attended trade shows to make services recommendations</li>
                     <li>Planned special events and delivered presentations to professional clients</li>
                 </ul>
 
-                <h4>Graphic Designer</h4>
+                <h3 class="typl8-delta">Graphic Designer</h3>
                 <h6>Digital Pro Lab</h6>
                 <h6>2005 &ndash; 2010 | San Antonio, Texas</h6>
                 <ul class="experience">
@@ -65,25 +65,24 @@
 
                 <hr>
 
-                <h5>Education</h5>
-                <h4>Codeup Bootcamp, 2015</h4>
+                <h2 class="typl8-epsilon">Education</h2>
+                <h3 class="typl8-delta">Codeup Bootcamp, 2015</h3>
                 <ul class="education">
-                    <li>LAMP+J Web Development</li>
+                    <li><abbr title="Linux, Apache, MySQL, PHP + JavaScript">LAMP+J</abbr> Web Development</li>
                     <li>4-month immersive bootcamp</li>
                 </ul>
-                <h4>Bachelor of Fine Arts, New Media, 2008</h4>
+                <h3 class="typl8-delta">Bachelor of Fine Arts, New Media, 2008</h3>
                 <ul class="education">
                     <li>University of Texas at San Antonio</li>
-                    <li>4.0 GPA, <em>summa cum laude</em></li>
+                    <li>4.0 <abbr>GPA</abbr>, <em>summa cum laude</em></li>
                 </ul>
 
                 <hr>
 
-                <h5>Skills</h5>
+                <h2 class="typl8-epsilon">Skills</h2>
                 <ul>
-                    <li>LAMP stack (Linux, Apache, MySQL, PHP)</li>
-                    <li>HTML5, CSS3, JavaScript, jQuery</li>
-                    <li>Vagrant, Laravel MVC framework, Sequel Pro</li>
+                    <li><abbr>HTML5</abbr>, <abbr>CSS3</abbr>, <abbr title="Linux, Apache, MySQL, PHP">LAMP</abbr> stack, JavaScript, jQuery</li>
+                    <li>Vagrant, Laravel <abbr title="Model, View, Controller">MVC</abbr> framework, Sequel Pro</li>
                     <li>Zurb Foundation and Twitter Bootstrap</li>
                     <li>Version control &mdash; Git and GitHub</li>
                     <li>Brand and visual identity creation</li>

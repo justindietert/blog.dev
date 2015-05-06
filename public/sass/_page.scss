@@ -81,6 +81,7 @@ section#main {
     width: 100%;
     padding: .5em 1.5em 0 1.5em;
     color: $white;
+    font-family: $sans;
     font-weight: 300;
     letter-spacing: 1px;
     letter-spacing: 0.056rem;
@@ -112,6 +113,7 @@ section#main {
 }
 
 #work a {
+    font-family: $sans;
     border-bottom: none;
     padding-bottom: 0;
     transition: opacity 200ms ease-out;
@@ -151,6 +153,7 @@ header.banner {
     max-width: 55.556em; /* 1000px at 18px base font size */
     z-index: 100;
     position: relative;
+    font-family: $sans;
 }
 
 a.menu {
@@ -330,6 +333,7 @@ footer {
     left: 0;
     background: $powder;
     color: $silver;
+    font-family: $sans;
     font-weight: 300;
 }
     @media only screen and (max-width: 28.125em) {
@@ -381,6 +385,7 @@ div.inner ul.social li a:focus {
 
 div.inner a.pdf-resume,
 div.inner a.pdf-resume:visited {
+    font-family: $sans;
     position: absolute;
     top: 4.3875em;
     right: 0;
@@ -445,6 +450,7 @@ h6.time {
 }
 
 div.inner div.blog-nav {
+    font-family: $sans;
     border-top: 0.056em solid #e2e2e2;
     margin-top: 3.5em;
 }
@@ -490,6 +496,7 @@ div.right-divider {
 }
 
 div.inner a.edit-post {
+    font-family: $sans;
     text-decoration: none;
     font-weight: 400;
     color: $silver;
@@ -500,6 +507,7 @@ div.inner a.edit-post {
 }
 
 div.inner button.delete-post {
+    font-family: $sans;
     text-decoration: none;
     font-weight: 400;
     color: $silver;
