@@ -421,7 +421,7 @@ label .inline-error {
     Blog
 \*----------------------------------*/
 
-input[type="text"] {
+input[type="text"], textarea {
     font-family: $sans;
 }
 
