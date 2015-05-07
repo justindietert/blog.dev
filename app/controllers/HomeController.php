@@ -81,4 +81,13 @@ class HomeController extends BaseController {
 	}
 
 
+	public function downloadResume()
+	{
+        $file= public_path(). "/download/Justin_Dietert_resume.pdf";
+        $headers = array(
+              'Content-Type: application/pdf',
+            );
+        return Response::download($file, 'Justin_Dietert_resume.pdf', $headers);
+	}
+
 }

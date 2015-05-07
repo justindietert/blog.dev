@@ -17,6 +17,8 @@ Route::get('about', 'HomeController@showAbout');
 
 Route::get('resume', 'HomeController@showResume');
 
+Route::get('resume/download', 'HomeController@downloadResume');
+
 
 Route::group(['prefix' => 'blog'], function()
 {
