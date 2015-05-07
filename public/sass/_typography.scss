@@ -24,6 +24,20 @@ h6 {
     font-weight: 400;
 }
 
+// Reduce the size of h2 headers at small screen sizes
+h2 {
+  @extend .typl8-beta;
+
+  @media( max-width: 31.25em ) {
+    @include typl8-typescale(
+        map-get($typl8-scale, typl8-gamma),
+        $typl8-font-base,
+        '#{$typl8-typescale-unit}',
+        $typl8-measure
+      );
+  }
+}
+
 p.intro {
     font-family: $serif;
     font-weight: 400;
@@ -91,3 +105,5 @@ label, button, .button {
     font-family: $sans;
     outline: 0;
 }
+
+
