@@ -6,7 +6,9 @@
 	"type": "project",
 	"require": {
 		"laravel/framework": "4.2.*",
-		"fzaninotto/faker": "1.5.*@dev"
+		"fzaninotto/faker": "1.5.*@dev",
+		"erusev/parsedown": "~1.1",
+	    "ezyang/htmlpurifier": "4.6.*"
 	},
 	"autoload": {
 		"classmap": [
