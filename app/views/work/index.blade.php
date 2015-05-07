@@ -21,7 +21,7 @@
             <div class="inner">
                 <div class="row">
                     <div class="col one">
-                        <a href="#" class="thumb"><img src="/img/work/thumbs/space_thumb.jpg" alt="Partners in Space"><span>Partners in Space</span></a>
+                        <a href="{{{ action('WorkController@space') }}}" class="thumb"><img src="/img/work/thumbs/space_thumb.jpg" alt="Partners in Space"><span>Partners in Space</span></a>
                     </div>
                     <div class="col two">
                         <a href="{{{ action('WorkController@whackamole') }}}" class="thumb"><img src="/img/work/thumbs/whack_thumb.jpg" alt="Whack-a-Mole!"><span>Whack-a-Mole!</span></a>
