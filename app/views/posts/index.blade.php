@@ -22,7 +22,7 @@
                 {{ Form::open(array('action' => array('PostsController@index'), 'method' => 'GET')) }}
                     <div class="row">
                         <div class="col search-field">
-                            {{ Form::text('search', null, ['class' => 'postfix']) }}
+                            {{ Form::text('search', $search, ['class' => 'postfix']) }}
                         </div>
                         <div class="col search-button">
                             {{ Form::submit('Search', ['class' => 'button tiny postfix']) }}
@@ -39,7 +39,7 @@
                 @endforeach
 
                 <div class="pag">
-                    {{ $posts->links('pagination::simple') }}
+                    {{ $posts->appends(Request::only('search'))->links() }}
                 </div>
             </div>
         </div>
