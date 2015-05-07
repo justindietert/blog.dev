@@ -10,7 +10,7 @@
 
 @section('nav-active')
     <li class="active"><a href="{{{ action('HomeController@showHome') }}}">Home</a></li>
-    <li><a href="{{{ action('HomeController@showWork') }}}">Work</a></li>
+    <li><a href="{{{ action('WorkController@index') }}}">Work</a></li>
     <li><a href="{{{ action('HomeController@showAbout') }}}">About</a></li>
     <li><a href="{{{ action('HomeController@showResume') }}}">Resum&eacute;</a></li>
     <li><a href="{{{ action('PostsController@index') }}}">Blog</a></li>

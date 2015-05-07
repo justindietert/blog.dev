@@ -13,8 +13,6 @@
 
 Route::get('/', 'HomeController@showHome');
 
-Route::get('work', 'HomeController@showWork');
-
 Route::get('about', 'HomeController@showAbout');
 
 Route::get('resume', 'HomeController@showResume');
@@ -28,5 +26,13 @@ Route::group(['prefix' => 'blog'], function()
 
 Route::get('login', 'HomeController@login');
 Route::post('login', 'HomeController@doLogin');
-
 Route::get('logout', 'HomeController@logout');
+
+
+Route::get('work', 'WorkController@index');
+
+Route::group(['prefix' => 'work'], function()
+{
+    Route::get('whack-a-mole', 'WorkController@whackamole');
+    Route::get('simple-simon', 'WorkController@simpleSimon');
+});

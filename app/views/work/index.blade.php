@@ -10,7 +10,7 @@
 
 @section('nav-active')
     <li><a href="{{{ action('HomeController@showHome') }}}">Home</a></li>
-    <li class="active"><a href="{{{ action('HomeController@showWork') }}}">Work</a></li>
+    <li class="active"><a href="{{{ action('WorkController@index') }}}">Work</a></li>
     <li><a href="{{{ action('HomeController@showAbout') }}}">About</a></li>
     <li><a href="{{{ action('HomeController@showResume') }}}">Resum&eacute;</a></li>
     <li><a href="{{{ action('PostsController@index') }}}">Blog</a></li>
@@ -24,7 +24,7 @@
                         <a href="#" class="thumb"><img src="/img/work/thumbs/space_thumb.jpg" alt="Partners in Space"><span>Partners in Space</span></a>
                     </div>
                     <div class="col two">
-                        <a href="#" class="thumb"><img src="/img/work/thumbs/whack_thumb.jpg" alt="Whack-a-Mole!"><span>Whack-a-Mole!</span></a>
+                        <a href="{{{ action('WorkController@whackamole') }}}" class="thumb"><img src="/img/work/thumbs/whack_thumb.jpg" alt="Whack-a-Mole!"><span>Whack-a-Mole!</span></a>
                     </div>
                     <div class="col three">
                         <a href="#" class="thumb"><img src="/img/work/thumbs/shepard_thumb.jpg" alt="Sam Shepard"><span>Sam Shepard</span></a>
@@ -37,7 +37,7 @@
                         <a href="#" class="thumb"><img src="/img/work/thumbs/stem_thumb.jpg" alt="STEM Graduates"><span>STEM Graduates</span></a>
                     </div>
                     <div class="col three">
-                        <a href="#" class="thumb"><img src="/img/work/thumbs/simon_thumb.jpg" alt="Simple Simon"><span>Simple Simon</span></a>
+                        <a href="{{{ action('WorkController@simpleSimon') }}}" class="thumb"><img src="/img/work/thumbs/simon_thumb.jpg" alt="Simple Simon"><span>Simple Simon</span></a>
                     </div>
 
                     <div class="col one">
