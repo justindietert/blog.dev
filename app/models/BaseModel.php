@@ -10,7 +10,7 @@ class BaseModel extends Eloquent
     public function getCreatedAtAttribute($value)
     {
         $utc = Carbon::createFromFormat($this->getDateFormat(), $value);
-        return $utc->setTimezone('America/Chicago')->subDay()->format('l, F jS Y');
+        return $utc->setTimezone('America/Chicago')->subDay()->format('F j, Y');
     }
 
     /**
