@@ -150,7 +150,7 @@ a.thumb span {
 
 header.banner {
     margin: 0 auto;
-    max-width: 55.556em; /* 1000px at 18px base font size */
+    max-width: $site-width;
     z-index: 100;
     position: relative;
     font-family: $sans;
@@ -184,7 +184,7 @@ a.menu {
     }
 
 nav.navigation {
-    width: 68%;
+    width: $inner-width;
     margin: 0 auto;
     padding-top: 0.555em;
     z-index: 300;
@@ -259,14 +259,14 @@ nav.navigation ul li.active a {
 
 div.main {
     margin: 0 auto;
-    max-width: 55.556em; /* 1000px at 18px base font size */
+    max-width: $site-width;
     padding-bottom: 6em;
 }
 
 div.inner {
     position: relative;
     margin: 0 auto;
-    width: 68%;
+    width: $inner-width;
     padding-top: 3em;
     transition: width 200ms ease-in-out;
 }
@@ -344,7 +344,7 @@ footer {
 
 div.foot {
     margin: 0 auto;
-    max-width: 55.556em; /* 1000px at 18px base font size */
+    max-width: $site-width;
 }
 
 ul.social {

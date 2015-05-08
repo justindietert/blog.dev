@@ -4,6 +4,10 @@
 // Font Awesome
 @import url(//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css);
 
+// Widths
+$site-width: 61.111em; /* 1100px at 18px base font size (defined by typeplate) */
+$inner-width: 68%;
+
 // Font Stacks
 $sans:  'Source Sans Pro', Verdana, sans-serif;
 $serif: 'Alegreya', Georgia, serif;
