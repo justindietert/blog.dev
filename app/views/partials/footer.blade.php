@@ -10,10 +10,11 @@
                     <hr>
                     <p>Copyright &copy; 2015 Justin Dietert.
                         @if(Auth::check())
-                            <a href="{{{ action('HomeController@logout') }}}">&nbsp;Log out.</a></p>
+                            <a href="{{{ action('HomeController@logout') }}}">&nbsp;Log out.</a>
                         @else
-                            <a href="{{{ action('HomeController@login') }}}">&nbsp;Log in.</a></p>
+                            <a href="{{{ action('HomeController@login') }}}">&nbsp;Log in.</a>
                         @endif
+                    </p>
                 </div>
             </div>
         </footer>
