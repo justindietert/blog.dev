@@ -6,10 +6,11 @@
 	"type": "project",
 	"require": {
 		"laravel/framework": "4.2.*",
-		"fzaninotto/faker": "1.5.*@dev",
+		"fzaninotto/faker": "~1.4",
 		"erusev/parsedown": "~1.1",
 	    "ezyang/htmlpurifier": "4.6.*",
-	    "zizaco/confide": "~4.3@dev"
+	    "zizaco/confide": "~4.3@dev",
+	    "esensi/model": "0.3.*"
 	},
 	"require-dev": {
 		"way/generators": "2.6.1"
