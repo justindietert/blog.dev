@@ -141,11 +141,11 @@ section#main {
 }
 
 a.thumb span {
-    font-weight: 300;
+    font-weight: 400;
     font-size: 0.875em;
     color: $tin;
 }
-    @media only screen and (max-width: 50em) {
+    @media only screen and (max-width: 59.375em) {
         a.thumb span {
             font-size: 1em;
         }
