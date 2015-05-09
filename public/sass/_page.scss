@@ -145,7 +145,7 @@ a.thumb span {
     font-size: 0.875em;
     color: $tin;
 }
-    @media only screen and (max-width: 55.556em) {
+    @media only screen and (max-width: 50em) {
         a.thumb span {
             font-size: 1em;
         }
@@ -335,18 +335,27 @@ div.inner a:focus {
     Footer
 \*----------------------------------*/
 
-footer {
+footer.row.col {
     height: 11em; /* Set to be the same as padding-bottom on section#main */
     position: absolute;
     bottom: 0;
     left: 0;
+    padding-left: 3.25em;
+    padding-right:3.25em;
     background: $powder;
     color: $silver;
     font-family: $sans;
     font-weight: 300;
 }
+    @media only screen and (max-width: 31.25em) {
+        footer.row.col {
+            padding-left: 1.5em;
+            padding-right: 1.5em;
+        }
+    }
+
     @media only screen and (max-width: 28.125em) {
-        footer {
+        footer.row.col {
                 height: 17.325em; /* Set to be the same as padding-bottom on section#main */
             }
         }
