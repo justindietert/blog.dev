@@ -34,7 +34,7 @@
                             <img src="/img/work/thumbs/whack_thumb.jpg" alt="Whack-a-Mole!">
                             <div class="title-overlay">
                                 <h2>Whack-a-Mole!</h2>
-                                <p>web design + web&nbsp;development</p>
+                                <p>web design &plus; web&nbsp;development</p>
                             </div>
                         </a>
                     </div>
@@ -71,7 +71,7 @@
                             <img src="/img/work/thumbs/simon_thumb.jpg" alt="Simple Simon">
                             <div class="title-overlay">
                                 <h2>Simple Simon</h2>
-                                <p>web design + web&nbsp;development</p>
+                                <p>web design &plus; web&nbsp;development</p>
                             </div>
                         </a>
                     </div>
@@ -118,7 +118,7 @@
                             <img src="/img/work/thumbs/logos_thumb.jpg" alt="Various Identities">
                             <div class="title-overlay">
                                 <h2>Various Identities</h2>
-                                <p>identity + print design</p>
+                                <p>identity &plus; print design</p>
                             </div>
                         </a>
                     </div>
