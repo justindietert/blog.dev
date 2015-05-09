@@ -337,10 +337,12 @@ div.inner a:focus {
 \*----------------------------------*/
 
 ::-moz-selection {
+    color: $charcoal;
     background: $selection;
 }
 
 ::selection {
+    color: $charcoal;
     background: $selection;
 }
 
