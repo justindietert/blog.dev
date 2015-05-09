@@ -5,6 +5,12 @@
 
 \*---------------------------------------------------------*/
 
+* {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
 html {
     color: #222;
     font-size: 1em;

@@ -6,11 +6,11 @@
 \*---------------------------------------------------------*/
 
 .col {
-    padding: 0 1.5em;
+    padding: 0 0.75em;
 }
 
 .row .row {
-    margin: 0 -1.5em;
+    margin: 0 -0.75em;
 }
 
 .row:before, .row:after {
@@ -43,37 +43,22 @@
 .two,
 .three {
     width: 33.33%;
-    margin-bottom: 1.125em;
+    margin-bottom: 1.5em;
 }
     @media only screen and (max-width: 59.375em) {
         .one,
         .two,
         .three {
             width: 50%;
-            margin-bottom: 1em;
         }
     }
-        @media only screen and (max-width: 31.25em) {
+        @media only screen and (max-width: 37.5em) {
             .one,
             .two,
             .three {
                 width: 100%;
             }
         }
-
-.one img,
-.two img,
-.three img {
-    width: 100%;
-    margin-bottom: .25em;
-}
-    @media only screen and (max-width: 59.375em) {
-        .one img,
-        .two img,
-        .three img {
-            margin-bottom: .5em;
-        }
-    }
 
 .col.search-field {
     width: 80%;

@@ -69,7 +69,7 @@ section#main {
     background: $white;
     position: relative;
 }
-    @media only screen and (max-width: 31.25em) {
+    @media only screen and (max-width: 37.5em) {
         section#main {
             padding-left: 1.5em;
             padding-right: 1.5em;
@@ -125,31 +125,44 @@ section#main {
     font-family: $sans;
     border-bottom: none;
     padding-bottom: 0;
-    transition: opacity 200ms ease-out;
+    position: relative;
+    display: block;
 }
 
 #work a img {
-    width: 100%;
-    height: auto;
+  display: block;
+  height: auto;
+  max-width: 100%;
+  width: auto;
 }
 
-#work a:hover,
-#work a:active,
-#work a:focus {
-    opacity: .6;
+.title-overlay {
+    background-color: $link;
+    color: #fff;
+    display: block;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    font-weight: 300;
+    opacity: 0;
+    padding: 1em 1.25em;
+    position: absolute;
     transition: opacity 200ms ease-out;
 }
 
-a.thumb span {
+.title-overlay h2 {
+    @extend .typl8-epsilon;
+    color: $white;
     font-weight: 400;
-    font-size: 0.875em;
-    color: $tin;
+    margin-bottom: .25em;
 }
-    @media only screen and (max-width: 59.375em) {
-        a.thumb span {
-            font-size: 1em;
-        }
-    }
+
+.title-overlay:hover,
+.title-overlay:active,
+.title-overlay:focus, {
+    opacity: .95;
+}
 
 .screen-reader-text {
     position: absolute;
@@ -193,13 +206,17 @@ a.menu {
     }
 
 nav.navigation {
-    width: $inner-width;
-    margin: 0 auto;
-    padding-top: 0.555em;
+    position: absolute;
+    top: 0.5em;
+    right: 0;
+    // width: $inner-width;
+    // margin: 0 auto;
+    // padding-top: 0.555em;
     z-index: 300;
 }
     @media only screen and (max-width: 50em) {
         nav.navigation {
+            position: static;
             display: none;
             clear: left;
             padding-top: 1.111em;
@@ -250,7 +267,7 @@ nav.navigation ul li a {
     @media only screen and (max-width: 50em) {
         nav.navigation ul li a {
             display: block;
-            padding: 1em 0 1.111em 0;
+            padding: .625em 0 .7875em 0;
             border-bottom: 0.056em solid $powder;
         }
     }
@@ -347,7 +364,7 @@ footer.row.col {
     font-family: $sans;
     font-weight: 300;
 }
-    @media only screen and (max-width: 31.25em) {
+    @media only screen and (max-width: 37.5em) {
         footer.row.col {
             padding-left: 1.5em;
             padding-right: 1.5em;
