@@ -337,14 +337,10 @@ div.inner a:focus {
 \*----------------------------------*/
 
 ::-moz-selection {
-    color: $white;
-    color: rgba(255, 255, 255, 0.8);
     background: $selection;
 }
 
 ::selection {
-    color: $white;
-    color: rgba(255, 255, 255, 0.8);
     background: $selection;
 }
 
