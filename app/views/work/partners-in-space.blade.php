@@ -18,11 +18,11 @@
 
 @section('content')
         <div role="main" class="main" id="work-show">
-            <div class="inner">
-                <h2>Partners in Space</h2>
-            </div>
             <div class="inner full">
                 <img src="/img/work/spreads/space_spread.jpg" alt="Partners in Space magazine spread">
+            </div>
+            <div class="inner full">
+                <h2>Partners in Space</h2>
             </div>
         </div>
 @stop

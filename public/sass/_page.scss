@@ -137,8 +137,8 @@ section#main {
 }
 
 .title-overlay {
-    background-color: $link;
-    color: #fff;
+    background-color: $link-hover;
+    color: $white;
     display: block;
     height: 100%;
     width: 100%;
@@ -152,16 +152,22 @@ section#main {
 }
 
 .title-overlay h2 {
-    @extend .typl8-epsilon;
-    color: $white;
+    @extend .typl8-zeta;
+    color: $powder;
     font-weight: 400;
-    margin-bottom: .25em;
+    margin-bottom: .5em;
+}
+.title-overlay p {
+    color: $powder;
+    font-size: 0.89875em;
+    line-height: 1.25;
+    margin-bottom: 1em;
 }
 
 .title-overlay:hover,
 .title-overlay:active,
 .title-overlay:focus, {
-    opacity: .95;
+    opacity: 1;
 }
 
 .screen-reader-text {
