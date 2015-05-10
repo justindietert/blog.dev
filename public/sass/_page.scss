@@ -225,7 +225,8 @@ nav.navigation {
             position: static;
             display: none;
             clear: left;
-            padding-top: 1.111em;
+            padding-top: 1.5em;
+            padding-bottom: .875em;
             width: 100%;
         }
         .no-js nav.navigation {
@@ -273,7 +274,7 @@ nav.navigation ul li a {
     @media only screen and (max-width: 50em) {
         nav.navigation ul li a {
             display: block;
-            padding: .625em 0 .7875em 0;
+            padding: 1em 0 1.25em 0;
             border-bottom: 0.056em solid $powder;
         }
     }
