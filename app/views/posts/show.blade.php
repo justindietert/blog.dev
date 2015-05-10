@@ -1,7 +1,7 @@
 @extends('layouts.master')
 
 @section('title')
-    <title>Justin Dietert | Blog &mdash; {{{ $post->title }}}</title>
+    <title>Blog &mdash; {{{ $post->title }}} | Justin Dietert</title>
 @stop
 
 @section('description')

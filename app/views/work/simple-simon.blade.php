@@ -1,7 +1,7 @@
 @extends('layouts.master')
 
 @section('title')
-    <title>Justin Dietert | Work &mdash; Simple Simon</title>
+    <title>Simple Simon | Justin Dietert</title>
 @stop
 
 @section('description')
