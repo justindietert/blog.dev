@@ -19,7 +19,7 @@
 @section('content')
         <div role="main" class="main" id="blog">
             <div class="inner">
-                {{ Form::open(array('action' => array('PostsController@index'), 'method' => 'GET')) }}
+{{--                 {{ Form::open(array('action' => array('PostsController@index'), 'method' => 'GET')) }}
                     <div class="row">
                         <div class="col search-field">
                             {{ Form::text('search', $search, ['class' => 'postfix']) }}
@@ -28,7 +28,7 @@
                             {{ Form::submit('Search', ['class' => 'button tiny postfix']) }}
                         </div>
                     </div>
-                {{ Form::close() }}
+                {{ Form::close() }} --}}
 
                 @foreach($posts as $post)
                     <hr class="top">

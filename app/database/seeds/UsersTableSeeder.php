@@ -14,15 +14,15 @@ class UsersTableSeeder extends Seeder
     {
         DB::table('users')->delete();
 
-        $faker = Factory::create();
+        // $faker = Factory::create();
 
-        for ($i = 1; $i <= 100; $i++) {
-            $user = new User();
-            $user->username = $faker->unique()->userName;
-            $user->email    = $faker->unique()->email;
-            $user->password = $faker->password;
-            $user->save();
-        }
+        // for ($i = 1; $i <= 100; $i++) {
+        //     $user = new User();
+        //     $user->username = $faker->unique()->userName;
+        //     $user->email    = $faker->unique()->email;
+        //     $user->password = $faker->password;
+        //     $user->save();
+        // }
 
         $user1 = new User();
         $user1->username = 'justind';
