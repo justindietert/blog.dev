@@ -112,13 +112,24 @@ section#main {
 
 #logo {
     float: left;
+    line-height: 1;
+}
+
+#logo a,
+#logo a:visited {
+    text-decoration: none;
+    color: $charcoal;
+    font-size: 2.778em;
+    display: block;
+    border-bottom: none;
+    vertical-align: bottom;
 }
 
 #logo a:hover,
 #logo a:active,
 #logo a:focus {
-    opacity: .60;
     outline: 0;
+    color: $tin;
 }
 
 #work a {
