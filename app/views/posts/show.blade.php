@@ -34,25 +34,27 @@
                     <p class="circle"><i class="fa fa-circle-o"></i></p>
                 @endif
 
-                <div class="blog-nav clearfix">
-                    <div class="left clearfix">
-                        @if($post->id === $post->min('id'))
-                            <a href="{{{ action('PostsController@index') }}}"><i class="fa fa-circle-o blue"></i> All Posts</a>
-                        @else
-                            <a href="{{{ URL::to('blog/posts/' . $older->slug) }}}"><i class="fa fa-caret-left"></i> Older</a>
-                        @endif
-                    </div>
-                    <div class="left left-divider"></div>
+                @if($post->count() > 1)
+                    <div class="blog-nav clearfix">
+                        <div class="left clearfix">
+                            @if($post->id === $post->min('id'))
+                                <a href="{{{ action('PostsController@index') }}}"><i class="fa fa-circle-o blue"></i> All Posts</a>
+                            @else
+                                <a href="{{{ URL::to('blog/posts/' . $older->slug) }}}"><i class="fa fa-caret-left"></i> Older</a>
+                            @endif
+                        </div>
+                        <div class="left left-divider"></div>
 
-                    <div class="right clearfix">
-                        @if($post->id === $post->max('id'))
-                            <a href="{{{ action('PostsController@index') }}}">All Posts <i class="fa fa-circle-o blue"></i></a>
-                        @else
-                            <a href="{{{ URL::to('blog/posts/' . $newer->slug) }}}">Newer <i class="fa fa-caret-right"></i></a>
-                        @endif
+                        <div class="right clearfix">
+                            @if($post->id === $post->max('id'))
+                                <a href="{{{ action('PostsController@index') }}}">All Posts <i class="fa fa-circle-o blue"></i></a>
+                            @else
+                                <a href="{{{ URL::to('blog/posts/' . $newer->slug) }}}">Newer <i class="fa fa-caret-right"></i></a>
+                            @endif
+                        </div>
+                        <div class="right right-divider"></div>
                     </div>
-                    <div class="right right-divider"></div>
-                </div>
+                @endif
             </div>
         </div>
 @stop
