@@ -17,6 +17,11 @@ class WorkController extends BaseController {
         return View::make('work.whack-a-mole');
     }
 
+    public function whackPlay()
+    {
+        return View::make('work.whack-play');
+    }
+
     public function simpleSimon()
     {
         return View::make('work.simple-simon');

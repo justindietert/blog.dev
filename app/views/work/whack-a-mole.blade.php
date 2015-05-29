@@ -20,6 +20,9 @@
         <div role="main" class="main" id="work-show">
             <div class="inner">
                 <h2>Whack-a-Mole!</h2>
+                <p>
+                    <a href="{{{ action('WorkController@whackPlay') }}}" target="_blank" class="edit-post">Play now &rarr;</a>
+                </p>
             </div>
         </div>
 @stop
