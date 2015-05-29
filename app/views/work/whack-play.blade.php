@@ -6,10 +6,10 @@
     <title>:: Whack-a-Mole! ::</title>
 
     <!-- Normalize CSS -->
-    <link rel="stylesheet" href="/css/normalize.css" />
+    <link rel="stylesheet" href="/css/whack-a-mole/normalize.css" />
 
     <!-- Foundation CSS -->
-    <link rel="stylesheet" href="/css/foundation.css" />
+    <link rel="stylesheet" href="/css/whack-a-mole/foundation.css" />
 
     <!-- Custom Google Fonts -->
     <link href='http://fonts.googleapis.com/css?family=Alegreya+Sans:300,400,900,900italic,400italic' rel='stylesheet' type='text/css'>
@@ -18,10 +18,10 @@
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" />
 
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="/css/whack.css" />
+    <link rel="stylesheet" href="/css/whack-a-mole/whack.css" />
 
     <!-- Modernizr.js -->
-    <script src="/js/vendor/modernizr.js"></script>
+    <script src="/js/whack-a-mole/vendor/modernizr.js"></script>
 </head>
 <body>
     <div class="row container">
@@ -122,28 +122,28 @@
     </div>
 
     <audio id="audio-one">
-        <source src="sound/funny_cartoon_jump.mp3"></source>
+        <source src="/sound/funny_cartoon_jump.mp3"></source>
     </audio>
 
     <audio id="audio-two">
-        <source src="sound/cartoon_up.mp3"></source>
+        <source src="/sound/cartoon_up.mp3"></source>
     </audio>
 
     <audio id="audio-win">
-        <source src="sound/small_crowd_says_yes.mp3"></source>
+        <source src="/sound/small_crowd_says_yes.mp3"></source>
     </audio>
 
     <audio id="audio-lose">
-        <source src="sound/wizard_says_no.mp3"></source>
+        <source src="/sound/wizard_says_no.mp3"></source>
     </audio>
 
-<script src="/js/vendor/jquery.js"></script>
-<script src="/js/vendor/jquery-ui.min.js"></script>
-<script src="/js/foundation.min.js"></script>
+<script src="/js/whack-a-mole/vendor/jquery.js"></script>
+<script src="/js/whack-a-mole/vendor/jquery-ui.min.js"></script>
+<script src="/js/whack-a-mole/foundation.min.js"></script>
 <script>
     $(document).foundation();
 </script>
 <!-- whack-a-mole script -->
-<script src="/js/whack.js"></script>
+<script src="/js/whack-a-mole/whack.js"></script>
 </body>
 </html>

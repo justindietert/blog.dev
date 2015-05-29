@@ -1,0 +1,285 @@
+
+body {
+    background: -webkit-linear-gradient(#3D9970, #2ECC40); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#3D9970, #2ECC40); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#3D9970, #2ECC40); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#3D9970, #2ECC40); /* Standard syntax */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-color: #3D9970;
+    font-family: 'Alegreya Sans', sans-serif;
+    -webkit-user-select: none; /* Chrome/Safari */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE10+ */
+    /*below not yet implemented in browsers*/
+    -o-user-select: none;
+    user-select: none;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    font-family: 'Alegreya Sans', sans-serif;
+    cursor: default;
+}
+
+h1 {
+    font-weight: 900;
+    margin-bottom: 0;
+}
+
+h4, h3 {
+    font-weight: 900;
+}
+
+.score {
+    padding-top: 0.125rem;
+}
+
+#points {
+    font-weight: 300;
+    /*letter-spacing: 0;*/
+    color: #01FF70;
+}
+
+#timer {
+  text-align: right;
+  float: right;
+}
+
+#high {
+  text-align: right;
+  float: right;
+}
+
+#seconds {
+  font-weight: 400;
+}
+
+.normal {
+  font-weight: 400;
+}
+
+.row {
+    max-width: 40rem;
+}
+
+.bottom-row {
+  margin-bottom: 1.5rem;
+}
+
+.normal {
+    font-weight: 400;
+}
+
+.emph {
+    font-style: italic;
+}
+
+.letter-space-one {
+    letter-spacing: 0.0625rem;
+}
+
+.middle, .bottom {
+    padding-top: 0.9375rem;
+}
+
+.lime {
+    color: #01FF70;
+    transition: 1000ms ease-out;
+}
+
+.lime-text {
+    color: #01FF70;
+}
+
+.gray {
+    color: #222222;
+    transition: 800ms ease-out;
+}
+
+.hole {
+    width: 100%;
+    height: 5rem;
+    border-radius: 50%;
+    background: #222222;
+    position: relative;
+}
+
+.hole:hover {
+    background: #000000;
+}
+
+.mole {
+    width: 100%;
+    height: 5rem;
+    border-radius: 50%;
+    background-image: url(/img/whack-a-mole/mole-fade-small.png);
+    background-size: cover;
+    position: absolute;
+    top: -0.4rem;
+    left: 0;
+    z-index: 100;
+    display: none;
+}
+
+.mole:active {
+  background-image: url(/img/whack-a-mole/mole-fade-hit.png);
+}
+
+.container {
+    padding-top: 2rem;
+}
+
+.game-board {
+    padding-top: 1.25rem;
+    padding-bottom: 7rem;
+}
+
+hr {
+    border: solid #42a679;
+    border-width: 0.0625rem 0 0;
+    clear: both;
+    margin: 1.25rem 0 1.1875rem;
+    height: 0;
+}
+
+.footer-text {
+    letter-spacing: 0.0125rem;
+    color: #33805d;
+}
+
+.svg .jd-logo {
+  width: 2rem;
+  height: 2rem;
+  background: url('/img/whack-a-mole/jd-logo-green.svg') no-repeat top left;
+  background-size: contain;
+}
+
+.no-svg .jd-logo {
+  background: url('/img/whack-a-mole/jd-logo-green.png');
+}
+
+.float-right {
+  float: right;
+}
+
+.button {
+  font-family: 'Source Sans Pro', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.125rem;
+  border-style: solid;
+  border-width: 1px;
+  cursor: pointer;
+  font-weight: 400;
+  line-height: normal;
+  margin: 0 0 1.25rem;
+  text-decoration: none;
+  text-align: center;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  border-radius: 0;
+  display: inline-block;
+  padding-top: 1rem;
+  padding-right: 2rem;
+  padding-bottom: 1.0625rem;
+  padding-left: 2rem;
+  font-size: 1rem;
+  background-color: none;
+  background: none;
+  border-color: #2ECC40;
+  color: #2ECC40;
+}
+
+button:hover, button:focus, .button:hover, .button:focus {
+    color: #01FF70;
+}
+
+button.small, .button.small {
+    padding-top: 0.875rem;
+    padding-right: 1.75rem;
+    padding-bottom: 0.9375rem;
+    padding-left: 1.75rem;
+    font-size: 0.8125rem;
+}
+
+button.tiny, .button.tiny {
+    padding-top: 0.625rem;
+    padding-right: 1.25rem;
+    padding-bottom: 0.6875rem;
+    padding-left: 1.25rem;
+    font-size: 0.8125rem;
+}
+
+.whack {
+  color: #222222;
+  border-color: #222222;
+  transition: 800ms ease-out;
+}
+
+.whack:hover {
+  color: #222222;
+  cursor: default;
+}
+
+#start {
+    margin-top: 1rem;
+    margin-bottom: 0;
+}
+
+.restart {
+    transition: 600ms ease-out;
+}
+
+.restart-two {
+  color: #222222;
+  transition: 800ms ease-out;
+}
+
+.button.right {
+    float: right;
+}
+
+.relative {
+    position: relative;
+}
+
+.absolute {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin-right: 0.9375rem;
+}
+
+.hide-one {
+  display: none;
+}
+
+.reveal-modal {
+  background-color: transparent;
+  border: none;
+  box-shadow: none;
+}
+
+.close-reveal-modal {
+  color: #3D9970 !important;
+}
+
+.center-vertical {
+  position: relative;
+  top: 35%;
+  transform: translateY(-35%);
+  font-size: 4rem;
+  line-height: 4rem;
+}
+
+@media only screen and (max-width: 23.4375em) {
+  .mole,
+  .hole {
+    height: 3rem;
+  }
+
+  #start {
+    position: static;
+    margin-bottom: 1rem;
+  }
+}
