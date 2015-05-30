@@ -69,3 +69,23 @@
     width: 20%;
     padding-left: 0;
 }
+
+.sixty {
+    width: 60%;
+}
+
+.forty {
+    width: 40%;
+    padding-left: 2.5em;
+}
+
+@media only screen and (max-width: 50em) {
+    .sixty,
+    .forty {
+        width: 100%;
+    }
+
+    .forty {
+        padding-left: 0.75em;
+    }
+}
