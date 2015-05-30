@@ -91,6 +91,21 @@
 }
 
 .foot-one,
-.foot-two {
+.foot-two,
+.foot-three {
     width: 33.33%;
 }
+    @media only screen and (max-width: 59.375em) {
+        .foot-one,
+        .foot-two,
+        .foot-three {
+            width: 50%;
+        }
+    }
+        @media only screen and (max-width: 37.5em) {
+            .foot-one,
+            .foot-two,
+            .foot-three {
+                width: 100%;
+            }
+        }

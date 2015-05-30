@@ -65,7 +65,7 @@ section#main {
     padding-top: 3.25em;
     padding-left: 3.25em;
     padding-right: 3.25em;
-    padding-bottom: 11em; /* Height of footer element */
+    padding-bottom: $footer-height; /* Height of footer element */
     background: $white;
     position: relative;
 }
@@ -73,12 +73,6 @@ section#main {
         section#main {
             padding-left: 1.5em;
             padding-right: 1.5em;
-        }
-    }
-
-    @media only screen and (max-width: 28.125em) {
-        section#main {
-            padding-bottom: 17.325em; /* Height of footer element */
         }
     }
 
@@ -367,7 +361,7 @@ div.inner a:focus {
 \*----------------------------------*/
 
 footer.row.col {
-    height: 11em; /* Set to be the same as padding-bottom on section#main */
+    height: $footer-height; /* Set to be the same as padding-bottom on section#main */
     position: absolute;
     bottom: 0;
     left: 0;
@@ -385,11 +379,25 @@ footer.row.col {
         }
     }
 
-    @media only screen and (max-width: 28.125em) {
+    @media only screen and (max-width: 59.375em) {
         footer.row.col {
-                height: 17.325em; /* Set to be the same as padding-bottom on section#main */
-            }
+            height: 19em; /* Set to be the same as padding-bottom on section#main */
         }
+
+        section#main {
+            padding-bottom: 19em; /* Height of footer element */
+        }
+    }
+
+    @media only screen and (max-width: 37.5em) {
+        footer.row.col {
+            height: 27em; /* Set to be the same as padding-bottom on section#main */
+        }
+
+        section#main {
+            padding-bottom: 27em; /* Height of footer element */
+        }
+    }
 
 div.foot {
     margin: 0 auto;
@@ -408,6 +416,7 @@ div.foot h3 {
     @extend .typl8-zeta;
     font-weight: 600;
     margin-bottom: 0.825rem;
+    color: $tin;
 }
 
 ul.social {
@@ -419,8 +428,16 @@ ul.social li {
     margin: 0;
 }
 
+@media only screen and (max-width: 37.5em) {
+    ul.navigate li:last-child {
+        margin-bottom: 1.5em;
+    }
+}
+
 div.inner ul.social li a,
-div.inner ul.social li a:visited {
+div.inner ul.social li a:visited,
+div.inner .footer-link,
+div.inner .footer-link:visited {
     text-decoration: none;
     font-weight: 400;
     color: $silver;
@@ -429,7 +446,10 @@ div.inner ul.social li a:visited {
 
 div.inner ul.social li a:hover,
 div.inner ul.social li a:active,
-div.inner ul.social li a:focus {
+div.inner ul.social li a:focus,
+div.inner .footer-link:hover,
+div.inner .footer-link:active,
+div.inner .footer-link:focus {
     text-decoration: none;
     color: $tin;
     outline: 0;

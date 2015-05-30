@@ -16,8 +16,7 @@
 
 @section('content')
         <div role="main" class="main" id="not-found">
-            <div class="inner">
-                <hr class="top">
+            <div class="inner full">
                 <h2>404: Page not found.</h2>
                 <p><a href="{{{ action('HomeController@showHome') }}}" class="edit-post"><i class="fa fa-arrow-circle-left"></i> Go home</a></p>
             </div>
