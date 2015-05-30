@@ -13,8 +13,6 @@
 
 Route::get('/', 'HomeController@showHome');
 
-Route::get('about', 'HomeController@showAbout');
-
 Route::get('resume', 'HomeController@showResume');
 
 Route::get('resume/download', 'HomeController@downloadResume');
