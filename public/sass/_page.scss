@@ -139,6 +139,56 @@ section#main {
   width: auto;
 }
 
+// .row.work-desc {
+//     margin-top: 1em;
+// }
+
+p.work-intro {
+    font-size: 1.25em;
+    font-family: $sans;
+    font-weight: 400;
+    @media( max-width: 31.25em ) {
+        font-size: 100%;
+    }
+}
+
+hr.work-divider {
+    background-color: $shine;
+    border: none;
+    color: $shine;
+    display: block;
+    height: 0.1875em;
+    margin: 1.25 auto 1.25em 0;
+    text-align: left;
+    width: 5.5625em;
+}
+
+#work-show h2 {
+    @extend .typl8-gamma;
+}
+
+#work-show h3 {
+    @extend .typl8-zeta;
+    font-weight: 600;
+    margin-bottom: 0;
+    color: $tin;
+}
+
+#work-show ul {
+    padding: 0;
+    margin-left: 0;
+    margin-right: auto;
+    margin-top: 0;
+    font-family: $sans;
+    color: $silver;
+}
+
+#work-show ul li {
+    margin-left: 0;
+    margin-right: auto;
+    margin-top: 0;
+}
+
 .title-overlay {
     background-color: $charcoal;
     color: $white;

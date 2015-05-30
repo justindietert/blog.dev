@@ -109,3 +109,28 @@
                 width: 100%;
             }
         }
+
+.one-third,
+.two-thirds,
+.full-spread {
+    margin-bottom: 1.5em;
+}
+
+.one-third {
+    width: 33.33%;
+}
+
+.two-thirds {
+    width: 66.66%;
+}
+
+.full-spread {
+    width: 100%;
+}
+
+    @media only screen and (max-width: 48.4375em) {
+        .one-third,
+        .two-thirds {
+            width: 100%;
+        }
+    }
