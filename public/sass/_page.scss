@@ -158,20 +158,22 @@ hr.work-divider {
     color: $shine;
     display: block;
     height: 0.1875em;
-    margin: 1.25 auto 1.25em 0;
+    margin: 1em auto 1.325em 0;
     text-align: left;
     width: 5.5625em;
+    @media( max-width: 31.25em ) {
+        height: 0.15em;
+    }
 }
 
-#work-show h2 {
+#work-show h1 {
     @extend .typl8-gamma;
 }
 
-#work-show h3 {
+#work-show h2 {
     @extend .typl8-zeta;
     font-weight: 600;
-    margin-bottom: 0;
-    color: $tin;
+    margin-bottom: 0.25em;
 }
 
 #work-show ul {
@@ -180,13 +182,50 @@ hr.work-divider {
     margin-right: auto;
     margin-top: 0;
     font-family: $sans;
-    color: $silver;
+    color: $tin;
 }
 
 #work-show ul li {
     margin-left: 0;
     margin-right: auto;
     margin-top: 0;
+}
+
+#work-show ul li p {
+    margin-bottom: 1em;
+}
+
+#work-show ul li:last-child p {
+    margin-bottom: 0;
+}
+
+.work-meta.show-for-small {
+    display: none;
+}
+
+@media only screen and (max-width: 48.4375em) {
+    .work-meta.hide-for-small {
+        display: none;
+    }
+    .work-meta.show-for-small {
+        display: block;
+    }
+}
+
+div.inner a.play-now,
+div.inner a.play-now:visited {
+    font-size: 0.875em;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.075rem;
+    color: $silver;
+    border-bottom: none;
+}
+
+div.inner a.play-now:hover,
+div.inner a.play-now:active,
+div.inner a.play-now:focus {
+    color: $tin;
 }
 
 .title-overlay {
@@ -380,16 +419,18 @@ div.inner.middle {
 
 div.inner a,
 div.inner a:visited {
-    color: $link;
+    color: $tin;
     text-decoration: none;
+    border-bottom: 0.0825em dotted $link;
 }
 
 div.inner a:hover,
 div.inner a:active,
 div.inner a:focus {
+    color: $body;
     text-decoration: none;
-    color: $link-hover;
     outline: 0;
+    border-bottom: none;
 }
 
 /*----------------------------------*\
@@ -503,6 +544,7 @@ div.inner .footer-link:focus {
     text-decoration: none;
     color: $tin;
     outline: 0;
+    border-bottom: none;
 }
 
 div.inner a.pdf-resume,
@@ -685,6 +727,9 @@ p.circle {
     color: $body;
 }
 
+p.circle a {
+    border-bottom: none;
+}
 
 
 /*----------------------------------*\

@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>:: Whack-a-Mole! ::</title>
+    <title>Play Whack-a-Mole! | Justin Dietert</title>
 
     <!-- Normalize CSS -->
     <link rel="stylesheet" href="/css/whack-a-mole/normalize.css" />
@@ -104,7 +104,7 @@
                 </div>
 
                 <div class="small-2 columns">
-                    <a href="#" class="jd-logo float-right"></a>
+                    <a href="{{{ action('HomeController@showHome') }}}" class="jd-logo float-right"></a>
                 </div>
             </div>
 

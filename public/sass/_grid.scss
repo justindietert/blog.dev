@@ -39,23 +39,17 @@
 /* you only need width to set up columns; all columns are 100%-width by default, so we start
    from a one-column mobile layout and gradually improve it according to available screen space */
 
-.one,
-.two,
-.three {
+.third {
     width: 33.33%;
     margin-bottom: 1.5em;
 }
     @media only screen and (max-width: 59.375em) {
-        .one,
-        .two,
-        .three {
+        .third {
             width: 50%;
         }
     }
         @media only screen and (max-width: 37.5em) {
-            .one,
-            .two,
-            .three {
+            .third {
                 width: 100%;
             }
         }
@@ -132,5 +126,8 @@
         .one-third,
         .two-thirds {
             width: 100%;
+        }
+        .one-third {
+            margin-bottom: 0;
         }
     }

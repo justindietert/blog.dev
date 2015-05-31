@@ -31,7 +31,7 @@
                         <ul class="experience">
                             <li><em>Adlister</em>: a Craigslist clone created in <abbr>php</abbr> over the course of one week with a partner. My main contributions were designing and building a customized front-end with the Zurb Foundation framework and integrating it with the backend functionality.</li>
                             <li><em>Blog (justindietert.com)</em>: a solo two-week portfolio and online resum&eacute; project, as well as a personal blog. Built with Laravel, utilizing the full <abbr title="Linux, Nginx, MySQL, PHP + JavaScript">lemp+j</abbr> stack. I also used <abbr>sass</abbr> and implemented a custom responsive grid system, as well as custom JavaScript/jQuery components.</li>
-                            <li><em>TyleNinja</em>: a two-week team capstone project. TyleNinja is a tile-sliding puzzle game web app, built from scratch using Laravel, JavaScript, jQuery, and MySQL. The full application can be viewed <a href="http://tyle.ninja/" target="_blank">here</a>.</li>
+                            <li><em>TyleNinja</em>: a two-week team capstone project. TyleNinja is a tile-sliding puzzle game web app, built from scratch using Laravel, JavaScript, jQuery, and MySQL. The full application <a href="http://tyle.ninja/" target="_blank">can be viewed here</a>.</li>
                         </ul>
 
                         <h3 class="typl8-delta">Senior Graphic Designer</h3>

@@ -84,4 +84,10 @@ class HomeController extends BaseController {
         return Response::download($file, 'Justin_Dietert_resume.pdf', $headers);
 	}
 
+
+    public function whackPlay()
+    {
+        return View::make('whack-play');
+    }
+
 }

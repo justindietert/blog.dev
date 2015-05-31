@@ -1,30 +1,41 @@
 <?php
 
-class WorkController extends BaseController {
+class WorkController extends \BaseController {
 
     public function index()
     {
-        return View::make('work.index');
+        $work = Work::all();
+        return View::make('work.index', compact('work'));
     }
 
-    public function space()
-    {
-        return View::make('work.partners-in-space');
-    }
 
-    public function whackamole()
+    public function show($id)
     {
-        return View::make('work.whack-a-mole');
-    }
+        $work = null;
 
-    public function whackPlay()
-    {
-        return View::make('work.whack-play');
-    }
+        try {
+            if(is_numeric($id)) {
+                $work = Work::findOrFail($id);
+            } else {
+                $work = Work::where('slug', '=', $id)->firstOrFail();
+            }
 
-    public function simpleSimon()
-    {
-        return View::make('work.simple-simon');
+            $older = Work::where('id', '<', $work->id)->orderBy('id', 'desc')->first();
+            $newer = Work::where('id', '>', $work->id)->first();
+
+            $data = [
+                'work'  => $work,
+                'older' => $older,
+                'newer' => $newer
+            ];
+
+            return View::make('work.show')->with($data);
+
+        } catch(Exception $e) {
+            Log::info('Page not found. See below:');
+            Log::error($e);
+            App::abort(404);
+        }
     }
 
 }

@@ -29,12 +29,6 @@ Route::post('login', 'HomeController@doLogin');
 Route::get('logout', 'HomeController@logout');
 
 
-Route::get('work', 'WorkController@index');
+Route::resource('work', 'WorkController', array('only' => array('index', 'show')));
 
-Route::group(['prefix' => 'work'], function()
-{
-    Route::get('partners-in-space', 'WorkController@space');
-    Route::get('whack-a-mole', 'WorkController@whackamole');
-    Route::get('whack-play', 'WorkController@whackPlay');
-    Route::get('simple-simon', 'WorkController@simpleSimon');
-});
+Route::get('whack-play', 'HomeController@whackPlay');
