@@ -16,7 +16,7 @@
 
 @section('content')
         <div role="main" class="main" id="work-show">
-            <div class="inner full">
+            <div class="inner full work-show">
                 <div class="row">
                     <div class="col one-third">
                         <h1>{{{ $work->title }}}</h1>
@@ -85,5 +85,36 @@
                     </div>
                 @endif
             </div>
+
+            @if($work->count() > 1)
+                <nav class="portfolio-nav">
+                    <ul class="clearfix">
+                        <li class="prev-project">
+                            @if($work->id === $work->min('id'))
+                                <span><i class="fa fa-circle-o small-circle"></i></span>
+                                <a href="{{{ action('WorkController@index') }}}">All Work</a>
+                            @else
+                                <span>&larr;</span>
+                                <a href="{{{ URL::to('work/' . $older->slug) }}}">{{{ $older->title }}}</a>
+                            @endif
+                        </li>
+
+                        <li>
+                            <a href="{{{ action('WorkController@index') }}}"><span class="grid-icon"><i class="fa fa-th"></i></span></a>
+                        </li>
+
+                        <li class="next-project">
+                            @if($work->id === $work->max('id'))
+                                <span><i class="fa fa-circle-o small-circle"></i></span>
+                                <a href="{{{ action('WorkController@index') }}}">All Work</a>
+                            @else
+                                <span>&rarr;</span>
+                                <a href="{{{ URL::to('work/' . $newer->slug) }}}">{{{ $newer->title }}}</a>
+                            @endif
+                        </li>
+                    </ul>
+                </nav>
+            @endif
+
         </div>
 @stop

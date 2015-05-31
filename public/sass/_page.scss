@@ -212,6 +212,71 @@ hr.work-divider {
     }
 }
 
+.portfolio-nav {
+    padding-top: 1.5em;
+    line-height: 1.25;
+}
+
+.portfolio-nav li {
+    float: left;
+    margin-bottom: 0;
+    width: 33.33%;
+    text-align: center;
+}
+
+.portfolio-nav li a,
+.portfolio-nav li a:visited {
+    color: $charcoal;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.portfolio-nav li a:hover,
+.portfolio-nav li a:active,
+.portfolio-nav li a:focus {
+    color: $tin;
+}
+
+.portfolio-nav li.prev-project {
+    overflow: hidden;
+    text-align: left;
+    text-overflow: ellipsis;
+}
+
+.portfolio-nav li.next-project {
+    overflow: hidden;
+    text-align: right;
+    text-overflow: ellipsis;
+}
+
+.portfolio-nav li.prev-project span,
+.portfolio-nav li.next-project span {
+    color: $silver;
+    display: block;
+}
+
+.portfolio-nav li.prev-project span,
+.portfolio-nav li.prev-project a {
+    margin-left: 0.056em;
+}
+
+.portfolio-nav li.next-project span,
+.portfolio-nav li.next-project a {
+    margin-left: 0.056em;
+}
+
+.portfolio-nav .grid-icon {
+    font-size: 2em;
+    line-height: 1;
+    position: relative;
+    top: 0.25em;
+}
+
+.small-circle {
+    font-size: 70%;
+}
+
+
 div.inner a.play-now,
 div.inner a.play-now:visited {
     font-size: 0.875em;
