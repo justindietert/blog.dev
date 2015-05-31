@@ -29,7 +29,7 @@ class WorkTableSeeder extends Seeder
         $work2->slug        = $work2->title;
         $work2->client      = "Texas State University";
         $work2->role        = "print design";
-        $work2->description = "Created for Texas State University's <a href='http://www.txstate.edu/discover/shepard'><em>Discover</em></a> research initiative, this advertisement was placed in <em>Texas Monthly</em> in order to draw attention to the vast Sam Shepard archive contained in the Wittliff Collections in the Albert B. Alkek Library.";
+        $work2->description = "Created for Texas State University's <a href='http://www.txstate.edu/discover/shepard'>Discover</a> research initiative, this advertisement was placed in <em>Texas Monthly</em> in order to draw attention to the vast Sam Shepard archive contained in the Wittliff Collections in the Albert B. Alkek Library.";
         $work2->thumbnail   = "/img/work/thumbs/shepard_thumb.jpg";
         $work2->img_1       = "/img/work/spreads/shepard_spread.jpg";
         $work2->img_2       = "/img/work/spreads/shepard_spread_zoom-2.jpg";
