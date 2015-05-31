@@ -14,23 +14,23 @@ class PostsTableSeeder extends Seeder
     {
         DB::table('posts')->delete();
 
-        $faker = Factory::create();
+        // $faker = Factory::create();
 
-        for ($i = 1; $i <= 10; $i++) {
-            $rand_body  = rand(50, 300);
-            $rand_title = rand(2, 4);
-            // Find a random user to assign to the post->user_id.
-            $user = User::all()->random();
-            $title = $faker->sentence($rand_title);
-            $title = str_replace('.', '', $title);
+        // for ($i = 1; $i <= 10; $i++) {
+        //     $rand_body  = rand(50, 300);
+        //     $rand_title = rand(2, 4);
+        //     // Find a random user to assign to the post->user_id.
+        //     $user = User::all()->random();
+        //     $title = $faker->sentence($rand_title);
+        //     $title = str_replace('.', '', $title);
 
-            $post = new Post();
-            $post->title = $title;
-            $post->slug = $post->title;
-            $post->body = $faker->sentence($rand_body);
-            $post->user_id = $user->id;
-            $post->save();
-        }
+        //     $post = new Post();
+        //     $post->title = $title;
+        //     $post->slug = $post->title;
+        //     $post->body = $faker->sentence($rand_body);
+        //     $post->user_id = $user->id;
+        //     $post->save();
+        // }
 
     }
 
