@@ -31,9 +31,11 @@
                                     <h2>Role</h2>
                                     <p>{{{ $work->role }}}</p>
                                 </li>
-                                <li>
-                                    <p>{{ $work->external_link }}</p>
-                                </li>
+                                @if (!is_null($work->external_link))
+                                    <li>
+                                        <p>{{ $work->external_link }}</p>
+                                    </li>
+                                @endif
                             </ul>
                         </div>
                     </div>
@@ -52,9 +54,11 @@
                                     <h2>Role</h2>
                                     <p>{{{ $work->role }}}</p>
                                 </li>
-                                <li>
-                                    <p>{{ $work->external_link }}</p>
-                                </li>
+                                @if (!is_null($work->external_link))
+                                    <li>
+                                        <p>{{ $work->external_link }}</p>
+                                    </li>
+                                @endif
                             </ul>
                         </div>
                     </div>
