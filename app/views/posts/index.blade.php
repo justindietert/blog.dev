@@ -29,7 +29,6 @@
                 {{ Form::close() }} --}}
 
                 @foreach($posts as $post)
-                    <hr class="top">
                     <h6 class="time"><span class="user">{{{ $post->user->username }}}</span> | {{{ $post->created_at }}}</h6>
                     <h2><a href="{{{ action('PostsController@show', $post->slug) }}}">{{{ $post->title }}}</a></h2>
                     <p>{{{ $post->body }}}</p>

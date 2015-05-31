@@ -692,13 +692,13 @@ h6.time {
     color: $tin;
 }
 
-div.inner div.blog-nav {
+div.inner nav.blog-nav {
     font-family: $sans;
     border-top: 0.056em solid #e2e2e2;
-    margin-top: 3.5em;
+    margin-top: 0;
 }
 
-div.inner div.blog-nav a {
+div.inner nav.blog-nav a {
     text-decoration: none;
     font-weight: 400;
     color: $silver;
@@ -770,9 +770,9 @@ div.inner button.delete-post {
 div.inner a.edit-post:hover,
 div.inner a.edit-post:active,
 div.inner a.edit-post:focus,
-div.inner div.blog-nav a:hover,
-div.inner div.blog-nav a:active,
-div.inner div.blog-nav a:focus,
+div.inner nav.blog-nav a:hover,
+div.inner nav.blog-nav a:active,
+div.inner nav.blog-nav a:focus,
 div.inner button.delete-post:hover,
 div.inner button.delete-post:active,
 div.inner button.delete-post:focus {

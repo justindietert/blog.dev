@@ -17,7 +17,6 @@
 @section('content')
         <div role="main" class="main" id="blog-show">
             <div class="inner">
-                <hr class="top">
                 <h6 class="time"><span class="user">{{{ $post->user->username }}}</span> | {{{ $post->created_at }}}</h6>
                 <h2>{{{ $post->title }}}</h2>
                 <p>{{{ $post->body }}}</p>
@@ -31,9 +30,10 @@
                 @else
                     <p class="circle"><i class="fa fa-circle-o"></i></p>
                 @endif
-
+            </div>
+            <div class="inner full">
                 @if($post->count() > 1)
-                    <div class="blog-nav clearfix">
+                    <nav class="blog-nav clearfix">
                         <div class="left clearfix">
                             @if($post->id === $post->min('id'))
                                 <a href="{{{ action('PostsController@index') }}}"><i class="fa fa-circle-o blue"></i> All Posts</a>
@@ -51,7 +51,7 @@
                             @endif
                         </div>
                         <div class="right right-divider"></div>
-                    </div>
+                    </nav>
                 @endif
             </div>
         </div>
