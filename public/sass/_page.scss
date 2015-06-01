@@ -166,17 +166,20 @@ hr.work-divider {
     }
 }
 
-#work-show h1 {
+#work-show h1,
+#home h1 {
     @extend .typl8-gamma;
 }
 
-#work-show h2 {
+#work-show h2,
+#home h2 {
     @extend .typl8-zeta;
     font-weight: 600;
     margin-bottom: 0.25em;
 }
 
-#work-show ul {
+#work-show ul,
+#home ul {
     padding: 0;
     margin-left: 0;
     margin-right: auto;
@@ -185,17 +188,20 @@ hr.work-divider {
     color: $tin;
 }
 
-#work-show ul li {
+#work-show ul li,
+#home ul li {
     margin-left: 0;
     margin-right: auto;
     margin-top: 0;
 }
 
-#work-show ul li p {
+#work-show ul li p,
+#home ul li p {
     margin-bottom: 1em;
 }
 
-#work-show ul li:last-child p {
+#work-show ul li:last-child p,
+#home ul li:last-child p {
     margin-bottom: 0;
 }
 
@@ -210,6 +216,10 @@ hr.work-divider {
     .work-meta.show-for-small {
         display: block;
     }
+}
+
+.home-view-work {
+    text-indent: 0;
 }
 
 .portfolio-nav {
@@ -283,8 +293,10 @@ div.inner a.play-now:visited {
     font-weight: 600;
     text-transform: uppercase;
     letter-spacing: 0.075rem;
+    font-family: $sans;
     color: $silver;
     border-bottom: none;
+    cursor: pointer;
 }
 
 div.inner a.play-now:hover,
@@ -749,7 +761,8 @@ div.inner a.edit-post {
     border-bottom: none;
 }
 
-div.inner button.delete-post {
+div.inner button.delete-post,
+div.inner button.work-home {
     font-family: $sans;
     text-decoration: none;
     font-weight: 400;
@@ -775,7 +788,10 @@ div.inner nav.blog-nav a:active,
 div.inner nav.blog-nav a:focus,
 div.inner button.delete-post:hover,
 div.inner button.delete-post:active,
-div.inner button.delete-post:focus {
+div.inner button.delete-post:focus,
+div.inner button.work-home:hover,
+div.inner button.work-home:active,
+div.inner button.work-home:focus {
     text-decoration: none;
     border-bottom: none;
     padding-bottom: 0;

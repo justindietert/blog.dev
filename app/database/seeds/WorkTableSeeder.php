@@ -84,6 +84,37 @@ class WorkTableSeeder extends Seeder
         $simon->external_link = "<a href=\"/simon-play\" target=\"_blank\" class=\"play-now\">Play now &rarr;</a>";
         $simon->save();
 
+        $stem              = new Work();
+        $stem->title       = "STEM Graduates";
+        $stem->slug        = $stem->title;
+        $stem->client      = "Texas State University";
+        $stem->role        = "print design";
+        $stem->description = "Designed for the Fall 2014 issue of Texas State University's alumni magazine, <em>Hillviews</em>, this two-spread story needed to highlight the growing demand for graduates in the fields of science, technology, engineering, and math. I was also responsible for art directing the photo shoots of Texas State graduates employed by CFAN for the intro spread.";
+        $stem->thumbnail   = "/img/work/thumbs/stem_thumb.jpg";
+        $stem->img_1       = "/img/work/spreads/stem_spread_1.jpg";
+        $stem->img_2       = "/img/work/spreads/stem_spread_2.jpg";
+        $stem->save();
+
+        $salute              = new Work();
+        $salute->title       = "Salute to Freedom";
+        $salute->slug        = $salute->title;
+        $salute->client      = "Texas State University";
+        $salute->role        = "print design";
+        $salute->description = "This advertisement for Texas State University was placed in <em>Texas Monthly</em>, drawing attention to the contributions of the university's most famous alumnus, President Lyndon Baines Johnson.";
+        $salute->thumbnail   = "/img/work/thumbs/salute_thumb.jpg";
+        $salute->img_1       = "/img/work/spreads/salute_spread.jpg";
+        $salute->save();
+
+        $firestation              = new Work();
+        $firestation->title       = "Fire Station Studios";
+        $firestation->slug        = $firestation->title;
+        $firestation->client      = "Texas State University";
+        $firestation->role        = "print design";
+        $firestation->description = "This article was designed for the Spring 2014 issue of Texas State University's alumni magazine, <em>Hillviews</em>, which focused on the performing arts. The design needed to effectively highlight the historic Fire Station Studios, which houses Texas State's Sound Recording Technology Program.";
+        $firestation->thumbnail   = "/img/work/thumbs/firestation_thumb.jpg";
+        $firestation->img_1       = "/img/work/spreads/firestation_spread_1.jpg";
+        $firestation->img_2       = "/img/work/spreads/firestation_spread_2.jpg";
+        $firestation->save();
 
     }
 

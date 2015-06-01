@@ -16,7 +16,7 @@
 
 @section('content')
         <div role="main" class="main" id="work-show">
-            <div class="inner full work-show">
+            <div class="inner full">
                 <div class="row">
                     <div class="col one-third">
                         <h1>{{{ $work->title }}}</h1>
