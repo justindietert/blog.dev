@@ -90,4 +90,9 @@ class HomeController extends BaseController {
         return View::make('whack-play');
     }
 
+    public function simonPlay()
+    {
+        return View::make('simon-play');
+    }
+
 }

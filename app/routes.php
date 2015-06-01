@@ -32,3 +32,4 @@ Route::get('logout', 'HomeController@logout');
 Route::resource('work', 'WorkController', array('only' => array('index', 'show')));
 
 Route::get('whack-play', 'HomeController@whackPlay');
+Route::get('simon-play', 'HomeController@simonPlay');
