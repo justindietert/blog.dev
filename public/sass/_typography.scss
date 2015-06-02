@@ -98,6 +98,13 @@ strong {
     letter-spacing: 0.1825rem;
 }
 
+#resume h5 {
+    @extend .typl8-zeta;
+    color: $tin;
+    margin-bottom: 0.5em;
+    line-height: 1.25em;
+}
+
 #resume h6 {
     font-family: $sans;
     color: $tin;
@@ -105,7 +112,7 @@ strong {
     text-transform: uppercase;
     letter-spacing: 0.09875rem;
     text-indent: 0;
-    margin-bottom: 0.25em;
+    margin-bottom: 0.75em;
     line-height: 1.5em;
 }
 
@@ -119,6 +126,10 @@ strong {
             padding-left: 1.125em;
         }
     }
+
+#resume ul li {
+    margin-bottom: 0.5em;
+}
 
 ul.experience,
 ul.education {

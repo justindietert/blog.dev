@@ -26,7 +26,8 @@
 
                         <h2 class="typl8-epsilon">Experience</h2>
 
-                        <h3 class="typl8-delta">Codeup Bootcamp Projects</h3>
+                        <h3 class="typl8-delta">Bootcamp Projects</h3>
+                        <h5 class="place">Codeup</h5>
                         <h6>April &ndash; May 2015 | San Antonio, Texas</h6>
                         <ul class="experience">
                             <li><em>Adlister</em>: a Craigslist clone created in PHP over the course of one week with a partner. My main contributions were designing and building a customized front-end with the Zurb Foundation framework and integrating it with the backend functionality.</li>
@@ -35,7 +36,7 @@
                         </ul>
 
                         <h3 class="typl8-delta">Senior Graphic Designer</h3>
-                        <h6>Texas State University, Office of University Marketing</h6>
+                        <h5 class="place">Texas State University, Office of University Marketing</h5>
                         <h6>July 2012 &ndash; December 2014 | San Marcos,&nbsp;Texas</h6>
                         <ul class="experience">
                             <li>Worked with clients from many of the diverse departments and offices of the university to effectively market their programs and services to both internal and external audiences</li>
@@ -44,7 +45,7 @@
                         </ul>
 
                         <h3 class="typl8-delta">Marketing and Design Manager</h3>
-                        <h6>Digital Pro Lab</h6>
+                        <h5 class="place">Digital Pro Lab</h5>
                         <h6>2010 &ndash; 2012 | San Antonio, Texas</h6>
                         <ul class="experience">
                             <li>Increased sales and revenue by marketing company services to professional clients and supervised design staff to ensure success of projects</li>
@@ -52,7 +53,7 @@
                         </ul>
 
                         <h3 class="typl8-delta">Graphic Designer</h3>
-                        <h6>Digital Pro Lab</h6>
+                        <h5 class="place">Digital Pro Lab</h5>
                         <h6>2005 &ndash; 2010 | San Antonio, Texas</h6>
                         <ul class="experience">
                             <li>Worked with in-house design team to create digital and print marketing material for company and professional clients while managing multiple projects and meeting tight deadlines</li>
