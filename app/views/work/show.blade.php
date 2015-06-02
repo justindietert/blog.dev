@@ -65,7 +65,7 @@
                 </div>
                 @if (!is_null($work->img_1))
                     <div class="row">
-                        <div class="col full-spread">
+                        <div class="col two-thirds right">
                             <img src="{{{ $work->img_1 }}}" alt="">
                         </div>
                     </div>
@@ -92,7 +92,7 @@
                         <li class="prev-project">
                             @if($work->id === $work->min('id'))
                                 <span><i class="fa fa-circle-o small-circle"></i></span>
-                                <a href="{{{ action('WorkController@index') }}}">All Work</a>
+                                <a href="{{{ action('WorkController@index') }}}">All work</a>
                             @else
                                 <span>&larr;</span>
                                 <a href="{{{ URL::to('work/' . $older->slug) }}}">{{{ $older->title }}}</a>
@@ -106,7 +106,7 @@
                         <li class="next-project">
                             @if($work->id === $work->max('id'))
                                 <span><i class="fa fa-circle-o small-circle"></i></span>
-                                <a href="{{{ action('WorkController@index') }}}">All Work</a>
+                                <a href="{{{ action('WorkController@index') }}}">All work</a>
                             @else
                                 <span>&rarr;</span>
                                 <a href="{{{ URL::to('work/' . $newer->slug) }}}">{{{ $newer->title }}}</a>

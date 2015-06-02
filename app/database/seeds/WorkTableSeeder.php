@@ -41,7 +41,7 @@ class WorkTableSeeder extends Seeder
         $innovation->slug        = $innovation->title;
         $innovation->client      = "Texas State University";
         $innovation->role        = "print design";
-        $innovation->description = "Innovation and Exploration was the theme selected for the Fall 2014 issue of Texas State University's alumni magazine, <em>Hillviews</em>. The primary goal of this issue was to bring attention to how Texas State's science, technology, engineering, and math departments are reshaping the university's national status in these fields. I was tasked with designing the cover and feature story spread, in which I utilized the engineering department's waterjet machine to cut typography out of frosted acrylic and art directed a photo shoot to document the process.";
+        $innovation->description = "Innovation and Exploration was the theme selected for the Fall 2014 issue of Texas State University's alumni magazine, <em>Hillviews</em>. The primary goal of this issue was to bring attention to how Texas State's science, technology, engineering, and math departments are reshaping the university's national status in these fields. I was tasked with designing the cover and feature story spread, in which I utilized the engineering department's waterjet machine to cut typography out of frosted acrylic. I also art directed the photo shoot to document the cutting process.";
         $innovation->thumbnail   = "/img/work/thumbs/innovation_thumb.jpg";
         $innovation->img_1       = "/img/work/spreads/innovation_spread_1.jpg";
         $innovation->img_2       = "/img/work/spreads/innovation_spread_2.jpg";
@@ -53,7 +53,7 @@ class WorkTableSeeder extends Seeder
         $whack->slug        = $whack->title;
         $whack->client      = "Justin Dietert";
         $whack->role        = "design + web development";
-        $whack->description = "Created with JavaScript and jQuery, this is a browser-based game based on the classic <a href='http://en.wikipedia.org/wiki/Whac-A-Mole'>Whac-a-Mole</a> arcade game. It was made during my time at Codeup, a full-stack programming bootcamp in San Antonio, Texas.";
+        $whack->description = "Created with JavaScript and jQuery, this is a browser-based game based on the classic <a href='http://en.wikipedia.org/wiki/Whac-A-Mole'>Whac-a-Mole</a> arcade game. It was made during my time at Codeup, a full-stack programming bootcamp in San Antonio, Texas. The game is mobile-responsive and also includes sound effects.";
         $whack->thumbnail   = "/img/work/thumbs/whack_thumb.jpg";
         $whack->img_1       = "/img/work/spreads/whack-a-mole_spread.jpg";
         $whack->external_link = "<a href=\"/whack-play\" target=\"_blank\" class=\"play-now\">Play now &rarr;</a>";
@@ -66,8 +66,8 @@ class WorkTableSeeder extends Seeder
         $shepard->role        = "print design";
         $shepard->description = "Designed for Texas State University's <a href='http://www.txstate.edu/discover/shepard'>Discover</a> research initiative, this advertisement was placed in <em>Texas Monthly</em> in order to draw attention to the vast Sam Shepard archive contained in the Wittliff Collections in the Albert B. Alkek Library.";
         $shepard->thumbnail   = "/img/work/thumbs/shepard_thumb.jpg";
-        $shepard->img_1       = "/img/work/spreads/shepard_spread.jpg";
-        $shepard->img_2       = "/img/work/spreads/shepard_spread_zoom-2.jpg";
+        $shepard->img_1       = "/img/work/spreads/shepard_spread_zoom-2.jpg";
+        $shepard->img_2       = "/img/work/spreads/shepard_spread.jpg";
         $shepard->img_3       = "/img/work/spreads/shepard_spread_zoom-1.jpg";
         $shepard->save();
 
@@ -91,8 +91,9 @@ class WorkTableSeeder extends Seeder
         $stem->role        = "print design";
         $stem->description = "Designed for the Fall 2014 issue of Texas State University's alumni magazine, <em>Hillviews</em>, this two-spread story needed to highlight the growing demand for graduates in the fields of science, technology, engineering, and math. I was also responsible for art directing the photo shoots of Texas State graduates employed by CFAN for the intro spread.";
         $stem->thumbnail   = "/img/work/thumbs/stem_thumb.jpg";
-        $stem->img_1       = "/img/work/spreads/stem_spread_1.jpg";
-        $stem->img_2       = "/img/work/spreads/stem_spread_2.jpg";
+        $stem->img_1       = "/img/work/spreads/stem_spread_zoom.jpg";
+        $stem->img_2       = "/img/work/spreads/stem_spread_1.jpg";
+        $stem->img_3       = "/img/work/spreads/stem_spread_2.jpg";
         $stem->save();
 
         $salute              = new Work();
@@ -112,9 +113,75 @@ class WorkTableSeeder extends Seeder
         $firestation->role        = "print design";
         $firestation->description = "This article was designed for the Spring 2014 issue of Texas State University's alumni magazine, <em>Hillviews</em>, which focused on the performing arts. The design needed to effectively highlight the historic Fire Station Studios, which houses Texas State's Sound Recording Technology Program.";
         $firestation->thumbnail   = "/img/work/thumbs/firestation_thumb.jpg";
-        $firestation->img_1       = "/img/work/spreads/firestation_spread_1.jpg";
-        $firestation->img_2       = "/img/work/spreads/firestation_spread_2.jpg";
+        $firestation->img_1       = "/img/work/spreads/firestation_spread_zoom.jpg";
+        $firestation->img_2       = "/img/work/spreads/firestation_spread_1.jpg";
+        $firestation->img_3       = "/img/work/spreads/firestation_spread_2.jpg";
         $firestation->save();
+
+        $takeaseat              = new Work();
+        $takeaseat->title       = "Take a Seat";
+        $takeaseat->slug        = $takeaseat->title;
+        $takeaseat->client      = "Texas State University";
+        $takeaseat->role        = "interactive design";
+        $takeaseat->description = "This interactive PDF form was used online as part of a campaign to raise money for the performing arts at Texas State University. The Take a Seat initiative asked theatre supporters to donate $5,000 to have their name(s) engraved on a plaque permanently affixed to the back of a theatre seat.";
+        $takeaseat->thumbnail   = "/img/work/thumbs/takeaseat_thumb.jpg";
+        $takeaseat->img_1       = "/img/work/spreads/takeaseat_spread.jpg";
+        $takeaseat->save();
+
+        $retention              = new Work();
+        $retention->title       = "TXST Retention";
+        $retention->slug        = $retention->title;
+        $retention->client      = "Texas State University";
+        $retention->role        = "print design";
+        $retention->description = "Texas State's Retention Management and Planning office needed various collateral to advertise their initiatives, such as a student mentoring program and a program targeted at increasing male student involvement on campus.";
+        $retention->thumbnail   = "/img/work/thumbs/retention_thumb.jpg";
+        $retention->img_1       = "/img/work/spreads/retention_poster.jpg";
+        $retention->img_2       = "/img/work/spreads/retention_postcard.jpg";
+        $retention->save();
+
+        $whysociology              = new Work();
+        $whysociology->title       = "Why Sociology?";
+        $whysociology->slug        = $whysociology->title;
+        $whysociology->client      = "Texas State University";
+        $whysociology->role        = "print design";
+        $whysociology->description = "Texas State University's Sociology department needed a new look and concept for recruiting students that could be applied to various collateral such as pull-up banners and promotional brochures.";
+        $whysociology->thumbnail   = "/img/work/thumbs/whysociology_thumb.jpg";
+        $whysociology->img_1       = "/img/work/spreads/whysociology_spread_1.jpg";
+        $whysociology->img_2       = "/img/work/spreads/whysociology_spread_2.jpg";
+        $whysociology->img_3       = "/img/work/spreads/whysociology_spread_3.jpg";
+        $whysociology->save();
+
+        $logos              = new Work();
+        $logos->title       = "Logos and Marks";
+        $logos->slug        = $logos->title;
+        $logos->client      = "various";
+        $logos->role        = "identity design";
+        $logos->description = "I created these logos and secondary brand marks for various clients. <a href='http://digitalprolab.com/'>Digital Pro Lab</a> is a professional photo lab based in San Antonio, Texas. More images and information to come.";
+        $logos->thumbnail   = "/img/work/thumbs/logos_thumb.jpg";
+        $logos->img_1       = "/img/work/spreads/logos_spread.png";
+        $logos->save();
+
+        $social              = new Work();
+        $social->title       = "TXST Social Media";
+        $social->slug        = $social->title;
+        $social->client      = "Texas State University";
+        $social->role        = "digital design";
+        $social->description = "Created for Texas State University's social media coordinators in the Office of University Marketing, these digital graphics promoted various campus events and organizations.";
+        $social->thumbnail   = "/img/work/thumbs/social_thumb.jpg";
+        $social->img_1       = "/img/work/spreads/social_spread_1.jpg";
+        $social->img_2       = "/img/work/spreads/social_spread_2.jpg";
+        $social->save();
+
+        $foster              = new Work();
+        $foster->title       = "Jeff Foster Invite";
+        $foster->slug        = $foster->title;
+        $foster->client      = "Texas State University";
+        $foster->role        = "print design";
+        $foster->description = "The Texas State Athletics department needed an invitation for the jersey retirement of one of their most famous alumni, Jeff Foster. The design needed to highlight his successful career as both a Texas State Bobcat and an Indiana Pacer.";
+        $foster->thumbnail   = "/img/work/thumbs/foster_thumb.jpg";
+        $foster->img_1       = "/img/work/spreads/foster_spread_1.jpg";
+        $foster->img_2       = "/img/work/spreads/foster_spread_2.jpg";
+        $foster->save();
 
     }
 

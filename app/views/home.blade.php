@@ -25,11 +25,11 @@
                             <ul>
                                 <li>
                                     <h2>Designer</h2>
-                                    <p>Skilled in typography</p>
+                                    <p>skilled in typography</p>
                                 </li>
                                 <li>
                                     <h2>Developer</h2>
-                                    <p>Loves clean code</p>
+                                    <p>loves clean code</p>
                                 </li>
                                 <li>
                                     <p>
@@ -41,21 +41,18 @@
                     </div>
                     <div class="col two-thirds">
                         <p class="work-intro">
-                            Hello. I am Justin Dietert, a designer and developer with a deep love of typography and a passion for clean, semantic code. I have a background in fine arts and photography, and I get excited about minimalist design. Check out my <a href="{{{ action('WorkController@index') }}}">work</a> and feel free to <a href="mailto:hello@justindietert.com">get in touch</a>.
+                            Hello. I am Justin Dietert, a designer and full-stack web developer with a deep love of typography and a passion for clean, semantic code. I have a background in fine arts and photography, and I get excited about minimalist design. Check out my <a href="{{{ action('WorkController@index') }}}">work</a> and feel free to <a href="mailto:hello@justindietert.com">get in touch</a>.
                         </p>
-{{--                         <p class="home-view-work work-meta hide-for-small">
-                            <a href="{{{ action('WorkController@index') }}}" class="play-now">View Work &rarr;</a>
-                        </p> --}}
                         <div class="work-meta show-for-small">
                             <hr class="work-divider">
                             <ul>
                                 <li>
                                     <h2>Designer</h2>
-                                    <p>Skilled in typography</p>
+                                    <p>skilled in typography</p>
                                 </li>
                                 <li>
                                     <h2>Developer</h2>
-                                    <p>Loves clean code</p>
+                                    <p>loves clean code</p>
                                 </li>
                                 <li>
                                     <p>
@@ -66,7 +63,17 @@
                         </div>
                     </div>
                 </div>
-
+                <div class="row" id="work">
+                    <div class="col two-thirds right">
+                        <a href="http://instagram.com/justindietert/" class="thumb">
+                            <img src="/img/jd-home.jpg" alt="Justin Dietert">
+                            <div class="title-overlay">
+                                <h2>Self Portrait</h2>
+                                <p>check out my Instagram</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
             </div>
 
         </div>

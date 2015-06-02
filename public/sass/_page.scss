@@ -322,15 +322,17 @@ div.inner a.play-now:focus {
 
 .title-overlay h2 {
     @extend .typl8-zeta;
-    color: $powder;
-    font-weight: 400;
-    margin-bottom: .5em;
+    color: $powder !important;
+    font-weight: 400 !important;
+    margin-bottom: .5em !important;
+    font-family: $sans;
 }
 .title-overlay p {
     color: $powder;
     font-size: 0.89875em;
     line-height: 1.25;
     margin-bottom: 1em;
+    font-family: $sans;
 }
 
 .title-overlay:hover,
@@ -819,9 +821,7 @@ p.circle a {
 
 .pag {
     font-family: $sans;
-    font-weight: 300;
-    font-size: 0.7875em;
-    text-transform: uppercase;
+    font-weight: 600;
     letter-spacing: 1px;
     letter-spacing: 0.075rem;
     text-align: center;
@@ -841,7 +841,7 @@ p.circle a {
 
 .pag ul li a,
 .pag ul li a:visited {
-    color: $link !important;
+    color: $charcoal !important;
     border-bottom: none;
 }
 
@@ -852,7 +852,7 @@ p.circle a {
     border-bottom: none;
     padding-bottom: 0;
     outline: 0;
-    color: $link-hover !important;
+    color: $tin !important;
 }
 
 .cancel {
