@@ -29,8 +29,8 @@
                         <h3 class="typl8-delta">Codeup Bootcamp Projects</h3>
                         <h6>April &ndash; May 2015 | San Antonio, Texas</h6>
                         <ul class="experience">
-                            <li><em>Adlister</em>: a Craigslist clone created in <abbr>php</abbr> over the course of one week with a partner. My main contributions were designing and building a customized front-end with the Zurb Foundation framework and integrating it with the backend functionality.</li>
-                            <li><em>Blog (<a href="{{{ action('HomeController@showHome') }}}">justindietert.com</a>)</em>: a solo two-week portfolio and online resum&eacute; project, as well as a personal blog. Built with Laravel, utilizing the full <abbr title="Linux, Nginx, MySQL, PHP + JavaScript">lemp+j</abbr> stack. I also used <abbr>sass</abbr> and implemented a custom responsive grid system, as well as custom JavaScript/jQuery components.</li>
+                            <li><em>Adlister</em>: a Craigslist clone created in PHP over the course of one week with a partner. My main contributions were designing and building a customized front-end with the Zurb Foundation framework and integrating it with the backend functionality.</li>
+                            <li><em>Blog (<a href="{{{ action('HomeController@showHome') }}}">justindietert.com</a>)</em>: a solo two-week portfolio and online resum&eacute; project, as well as a personal blog. Built with Laravel, utilizing the full LEMP+J stack. I also used SASS and implemented a custom responsive grid system, as well as custom JavaScript/jQuery components.</li>
                             <li><em>TyleNinja</em>: a two-week team capstone project. TyleNinja is a tile-sliding puzzle game web app, built from scratch using Laravel, JavaScript, jQuery, and MySQL. The full application <a href="http://tyle.ninja/" target="_blank">can be viewed here</a>.</li>
                         </ul>
 
@@ -48,7 +48,7 @@
                         <h6>2010 &ndash; 2012 | San Antonio, Texas</h6>
                         <ul class="experience">
                             <li>Increased sales and revenue by marketing company services to professional clients and supervised design staff to ensure success of projects</li>
-                            <li>Lead designer for print and online advertising campaigns and in charge of monthly email newsletters from concept to <abbr>HTML</abbr> code</li>
+                            <li>Lead designer for print and online advertising campaigns and in charge of monthly email newsletters from concept to HTML code</li>
                         </ul>
 
                         <h3 class="typl8-delta">Graphic Designer</h3>
@@ -64,21 +64,22 @@
                         <h3 class="typl8-delta">Codeup Bootcamp</h3>
                         <h6>Graduated May 2015</h6>
                         <ul class="education">
-                            <li><abbr title="Linux, Nginx, MySQL, PHP + JavaScript">LEMP+J</abbr> Web Development</li>
+                            <li>LEMP+J Web Development</li>
                             <li>4-month immersive bootcamp</li>
                         </ul>
                         <h3 class="typl8-delta">Bachelor of Fine Arts, New Media</h3>
                         <h6>Graduated May 2008</h6>
                         <ul class="education">
                             <li>University of Texas at San Antonio</li>
-                            <li>4.0 <abbr>GPA</abbr>, <em>summa cum laude</em></li>
+                            <li>4.0 GPA, <em>summa cum laude</em></li>
                         </ul>
 
                         <h2 class="typl8-epsilon">Skills</h2>
                         <ul>
-                            <li><abbr>HTML5</abbr>, <abbr>CSS3</abbr>, <abbr title="Linux, Nginx, MySQL, PHP">LEMP</abbr> stack, JavaScript, jQuery</li>
-                            <li>Vagrant, Laravel <abbr title="Model, View, Controller">MVC</abbr> framework, Sequel Pro</li>
-                            <li>Zurb Foundation, Twitter Bootstrap, Materialize <abbr>CSS</abbr></li>
+                            <li>LEMP stack (Linux, Nginx, MySQL, PHP)</li>
+                            <li>HTML5, CSS3, JavaScript, jQuery</li>
+                            <li>Vagrant, Laravel MVC framework, Sequel Pro</li>
+                            <li>Zurb Foundation, Twitter Bootstrap, Materialize CSS</li>
                             <li>Version control &mdash; Git and GitHub</li>
                             <li>Brand and visual identity creation</li>
                             <li>Layout, typography, color theory, photography</li>

@@ -42,7 +42,7 @@
 \*---------------------------------------------------------*/
 
 body {
-    font-family: $serif;
+    font-family: $sans;
     font-weight: 400;
     font-kerning: normal;
     font-variant-ligatures: common-ligatures;
@@ -73,7 +73,7 @@ h2 {
 }
 
 p.intro {
-    font-family: $serif;
+    font-family: $sans;
     font-weight: 400;
     font-size: 1.75em;
 }
@@ -125,15 +125,15 @@ ul.education {
     margin-top: 0;
 }
 
-abbr {
-    font-family: 'Alegreya SC';
-    letter-spacing: 1px;
-    letter-spacing: 0.056rem;
-}
+// abbr {
+//     font-family: 'Alegreya SC';
+//     letter-spacing: 1px;
+//     letter-spacing: 0.056rem;
+// }
 
-abbr[title] {
-    border-bottom: 1px dotted $silver;
-}
+// abbr[title] {
+//     border-bottom: 1px dotted $silver;
+// }
 
 label, button, .button {
     font-family: $sans;
