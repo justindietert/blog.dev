@@ -89,7 +89,7 @@ class WorkTableSeeder extends Seeder
         $stem->slug        = $stem->title;
         $stem->client      = "Texas State University";
         $stem->role        = "print design";
-        $stem->description = "Designed for the Fall 2014 issue of Texas State University's alumni magazine, <em>Hillviews</em>, this two-spread story needed to highlight the growing demand for graduates in the fields of science, technology, engineering, and math. I was also responsible for art directing the photo shoots of Texas State graduates employed by CFAN for the intro spread.";
+        $stem->description = "Designed for the Fall 2014 issue of Texas State University's alumni magazine, <em>Hillviews</em>, this two-spread story needed to highlight the growing demand for graduates in the fields of science, technology, engineering, and math. I was also responsible for art directing the photo shoots of Texas State graduates employed by CFAN for the article's intro spread.";
         $stem->thumbnail   = "/img/work/thumbs/stem_thumb.jpg";
         $stem->img_1       = "/img/work/spreads/stem_spread_zoom.jpg";
         $stem->img_2       = "/img/work/spreads/stem_spread_1.jpg";
@@ -166,10 +166,17 @@ class WorkTableSeeder extends Seeder
         $social->slug        = $social->title;
         $social->client      = "Texas State University";
         $social->role        = "digital design";
-        $social->description = "Created for Texas State University's social media coordinators in the Office of University Marketing, these digital graphics promoted various campus events and organizations.";
+        $social->description = "Created for Texas State University's social media coordinators in the Office of University Marketing, these custom digital graphics promoted various campus events, organizations, and school spirit. They were primarily used as Facebook cover photos or as Twitter image attachments.";
         $social->thumbnail   = "/img/work/thumbs/social_thumb.jpg";
         $social->img_1       = "/img/work/spreads/social_spread_1.jpg";
         $social->img_2       = "/img/work/spreads/social_spread_2.jpg";
+        $social->img_3       = "/img/work/spreads/social_spread_3.jpg";
+        $social->img_4       = "/img/work/spreads/social_spread_4.jpg";
+        $social->img_5       = "/img/work/spreads/social_spread_5.jpg";
+        $social->img_6       = "/img/work/spreads/social_spread_6.jpg";
+        $social->img_7       = "/img/work/spreads/social_spread_7.jpg";
+        $social->img_8       = "/img/work/spreads/social_spread_8.jpg";
+        $social->img_9       = "/img/work/spreads/social_spread_9.jpg";
         $social->save();
 
         $foster              = new Work();

@@ -84,6 +84,55 @@
                         </div>
                     </div>
                 @endif
+                @if (!is_null($work->img_4))
+                    <div class="row">
+                        <div class="col full-spread">
+                            <img src="{{{ $work->img_4 }}}" alt="">
+                        </div>
+                    </div>
+                @endif
+                @if (!is_null($work->img_5))
+                    <div class="row">
+                        <div class="col full-spread">
+                            <img src="{{{ $work->img_5 }}}" alt="">
+                        </div>
+                    </div>
+                @endif
+                @if (!is_null($work->img_6))
+                    <div class="row">
+                        <div class="col full-spread">
+                            <img src="{{{ $work->img_6 }}}" alt="">
+                        </div>
+                    </div>
+                @endif
+                @if (!is_null($work->img_7))
+                    <div class="row">
+                        <div class="col full-spread">
+                            <img src="{{{ $work->img_7 }}}" alt="">
+                        </div>
+                    </div>
+                @endif
+                @if (!is_null($work->img_8))
+                    <div class="row">
+                        <div class="col full-spread">
+                            <img src="{{{ $work->img_8 }}}" alt="">
+                        </div>
+                    </div>
+                @endif
+                @if (!is_null($work->img_9))
+                    <div class="row">
+                        <div class="col full-spread">
+                            <img src="{{{ $work->img_9 }}}" alt="">
+                        </div>
+                    </div>
+                @endif
+                @if (!is_null($work->img_10))
+                    <div class="row">
+                        <div class="col full-spread">
+                            <img src="{{{ $work->img_10 }}}" alt="">
+                        </div>
+                    </div>
+                @endif
             </div>
 
             @if($work->count() > 1)
