@@ -8,9 +8,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="apple-touch-icon" href="apple-touch-icon.png">
 
-    <script src="/js/vendor/pace.min.js"></script>
-    <link href="/css/pace/pace-fill-left.css" rel="stylesheet">
-
     <link rel="stylesheet" href="/css/main.css">
 
     <!-- If JavaScript disabled, .no-js classes will take effect -->
