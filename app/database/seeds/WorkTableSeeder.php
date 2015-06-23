@@ -12,6 +12,19 @@ class WorkTableSeeder extends Seeder
     {
         DB::table('work')->delete();
 
+        $bobcatclub              = new Work();
+        $bobcatclub->title       = "Bobcat Club";
+        $bobcatclub->slug        = $bobcatclub->title;
+        $bobcatclub->client      = "Texas State University";
+        $bobcatclub->role        = "print design";
+        $bobcatclub->description = "The Bobcat Club is the principal fundraising arm of the Texas State Intercollegiate Athletics Department. They needed a fresh design concept for their annual fundraising brochure, which continued their successful Pave the Way campaign. They were presented with the following 3 brochure spreads to choose from, which show a range of aesthetic options.";
+        $bobcatclub->thumbnail   = "/img/work/thumbs/bobcatclub_thumb.jpg";
+        $bobcatclub->img_1       = "/img/work/spreads/bobcat_club_3_detail.png";
+        $bobcatclub->img_2       = "/img/work/spreads/bobcat_club_3.jpg";
+        $bobcatclub->img_3       = "/img/work/spreads/bobcat_club_2.jpg";
+        $bobcatclub->img_4       = "/img/work/spreads/bobcat_club_1.jpg";
+        $bobcatclub->save();
+
         $kapable              = new Work();
         $kapable->title       = "Kapable Solutions";
         $kapable->slug        = $kapable->title;
