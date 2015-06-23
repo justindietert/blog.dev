@@ -18,7 +18,7 @@ class WorkTableSeeder extends Seeder
         $kapable->client      = "Kapable Solutions";
         $kapable->role        = "identity design";
         $kapable->description = "Kennith A. Patterson needed a fresh, forward-thinking identity for his freelance consulting company, Kapable Solutions, which specializes in project management and process improvement. I utilized the sturdy, yet friendly Atrament typeface for the wordmark, highlighting the unique spelling of “Kapable” (a play on Kenny’s initials, “KAP”) with a horizontal line above the “K”. Intended as a symbol of the process of arriving at solutions, the line element also lended itself well to the creation of secondary marks comprised of Kenny’s initials.";
-        $kapable->thumbnail   = "/img/work/thumbs/kapable_thumb.jpg";
+        $kapable->thumbnail   = "/img/work/thumbs/kapable_thumb.png";
         $kapable->img_1       = "/img/work/spreads/kapable_solutions_logo.png";
         $kapable->img_2       = "/img/work/spreads/kapable_solutions_secondary.png";
         $kapable->img_3       = "/img/work/spreads/kapable_solutions_color.png";
